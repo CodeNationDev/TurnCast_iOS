@@ -7,20 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32438B932062B18E00BFF0F7 /* gRPCCertificates.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 32438B7B2062B18E00BFF0F7 /* gRPCCertificates.bundle */; };
+		32438BA62062B33300BFF0F7 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B6F2062B18E00BFF0F7 /* FirebaseCore.framework */; };
 		5F29D96C2060E18F0014EF61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F29D96B2060E18F0014EF61 /* AppDelegate.swift */; };
 		5F29D96E2060E18F0014EF61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F29D96D2060E18F0014EF61 /* ViewController.swift */; };
 		5F29D9712060E18F0014EF61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F29D96F2060E18F0014EF61 /* Main.storyboard */; };
 		5F29D9732060E18F0014EF61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F29D9722060E18F0014EF61 /* Assets.xcassets */; };
 		5F29D9762060E18F0014EF61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F29D9742060E18F0014EF61 /* LaunchScreen.storyboard */; };
 		5FEED7B720622EE700CB270D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FEED7B620622EE600CB270D /* GoogleService-Info.plist */; };
-		5FEED7DC2062343C00CB270D /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEED7DB2062343C00CB270D /* SafariServices.framework */; };
-		5FEED7DE2062344300CB270D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEED7DD2062344300CB270D /* SystemConfiguration.framework */; };
 		5FEED7EA2062398700CB270D /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5FEED7E92062398600CB270D /* GoogleSignIn.bundle */; };
-		5FEED7ED20623A0400CB270D /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEED7EB20623A0400CB270D /* GoogleSignIn.framework */; };
-		5FEED7EE20623A0400CB270D /* GoogleSignInDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEED7EC20623A0400CB270D /* GoogleSignInDependencies.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32438B6F2062B18E00BFF0F7 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
+		32438B702062B18E00BFF0F7 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		32438B712062B18E00BFF0F7 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleToolboxForMac.framework; sourceTree = "<group>"; };
+		32438B722062B18E00BFF0F7 /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nanopb.framework; sourceTree = "<group>"; };
+		32438B732062B18E00BFF0F7 /* FirebaseNanoPB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseNanoPB.framework; sourceTree = "<group>"; };
+		32438B742062B18E00BFF0F7 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		32438B752062B18E00BFF0F7 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
+		32438B772062B18E00BFF0F7 /* Protobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Protobuf.framework; sourceTree = "<group>"; };
+		32438B782062B18E00BFF0F7 /* gRPC-Core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "gRPC-Core.framework"; sourceTree = "<group>"; };
+		32438B792062B18E00BFF0F7 /* FirebaseFirestore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseFirestore.framework; sourceTree = "<group>"; };
+		32438B7B2062B18E00BFF0F7 /* gRPCCertificates.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = gRPCCertificates.bundle; sourceTree = "<group>"; };
+		32438B7C2062B18E00BFF0F7 /* leveldb-library.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "leveldb-library.framework"; sourceTree = "<group>"; };
+		32438B7D2062B18E00BFF0F7 /* gRPC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = gRPC.framework; sourceTree = "<group>"; };
+		32438B7E2062B18E00BFF0F7 /* gRPC-ProtoRPC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "gRPC-ProtoRPC.framework"; sourceTree = "<group>"; };
+		32438B7F2062B18E00BFF0F7 /* BoringSSL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BoringSSL.framework; sourceTree = "<group>"; };
+		32438B802062B18E00BFF0F7 /* gRPC-RxLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "gRPC-RxLibrary.framework"; sourceTree = "<group>"; };
+		32438B822062B18E00BFF0F7 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = "<group>"; };
+		32438B832062B18E00BFF0F7 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = "<group>"; };
+		32438B842062B18E00BFF0F7 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = Turncast/Libraries/Firebase/module.modulemap; sourceTree = SOURCE_ROOT; };
+		32438B862062B18E00BFF0F7 /* leveldb-library.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "leveldb-library.framework"; sourceTree = "<group>"; };
+		32438B872062B18E00BFF0F7 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseDatabase.framework; sourceTree = "<group>"; };
+		32438B882062B18E00BFF0F7 /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Turncast/Libraries/Firebase/Firebase.h; sourceTree = SOURCE_ROOT; };
 		5F29D9682060E18F0014EF61 /* Turncast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Turncast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F29D96B2060E18F0014EF61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F29D96D2060E18F0014EF61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,16 +61,86 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FEED7ED20623A0400CB270D /* GoogleSignIn.framework in Frameworks */,
-				5FEED7EE20623A0400CB270D /* GoogleSignInDependencies.framework in Frameworks */,
-				5FEED7DE2062344300CB270D /* SystemConfiguration.framework in Frameworks */,
-				5FEED7DC2062343C00CB270D /* SafariServices.framework in Frameworks */,
+				32438BA62062B33300BFF0F7 /* FirebaseCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32438B6D2062B0F600BFF0F7 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				32438B6E2062B18E00BFF0F7 /* Analytics */,
+				32438B812062B18E00BFF0F7 /* Auth */,
+				32438B852062B18E00BFF0F7 /* Database */,
+				32438B882062B18E00BFF0F7 /* Firebase.h */,
+				32438B762062B18E00BFF0F7 /* Firestore */,
+				32438B842062B18E00BFF0F7 /* module.modulemap */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		32438B6E2062B18E00BFF0F7 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				32438B6F2062B18E00BFF0F7 /* FirebaseCore.framework */,
+				32438B702062B18E00BFF0F7 /* FirebaseAnalytics.framework */,
+				32438B712062B18E00BFF0F7 /* GoogleToolboxForMac.framework */,
+				32438B722062B18E00BFF0F7 /* nanopb.framework */,
+				32438B732062B18E00BFF0F7 /* FirebaseNanoPB.framework */,
+				32438B742062B18E00BFF0F7 /* FirebaseInstanceID.framework */,
+				32438B752062B18E00BFF0F7 /* FirebaseCoreDiagnostics.framework */,
+			);
+			name = Analytics;
+			path = Turncast/Libraries/Firebase/Analytics;
+			sourceTree = SOURCE_ROOT;
+		};
+		32438B762062B18E00BFF0F7 /* Firestore */ = {
+			isa = PBXGroup;
+			children = (
+				32438B772062B18E00BFF0F7 /* Protobuf.framework */,
+				32438B782062B18E00BFF0F7 /* gRPC-Core.framework */,
+				32438B792062B18E00BFF0F7 /* FirebaseFirestore.framework */,
+				32438B7A2062B18E00BFF0F7 /* Resources */,
+				32438B7C2062B18E00BFF0F7 /* leveldb-library.framework */,
+				32438B7D2062B18E00BFF0F7 /* gRPC.framework */,
+				32438B7E2062B18E00BFF0F7 /* gRPC-ProtoRPC.framework */,
+				32438B7F2062B18E00BFF0F7 /* BoringSSL.framework */,
+				32438B802062B18E00BFF0F7 /* gRPC-RxLibrary.framework */,
+			);
+			name = Firestore;
+			path = Turncast/Libraries/Firebase/Firestore;
+			sourceTree = SOURCE_ROOT;
+		};
+		32438B7A2062B18E00BFF0F7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				32438B7B2062B18E00BFF0F7 /* gRPCCertificates.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		32438B812062B18E00BFF0F7 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				32438B822062B18E00BFF0F7 /* GTMSessionFetcher.framework */,
+				32438B832062B18E00BFF0F7 /* FirebaseAuth.framework */,
+			);
+			name = Auth;
+			path = Turncast/Libraries/Firebase/Auth;
+			sourceTree = SOURCE_ROOT;
+		};
+		32438B852062B18E00BFF0F7 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				32438B862062B18E00BFF0F7 /* leveldb-library.framework */,
+				32438B872062B18E00BFF0F7 /* FirebaseDatabase.framework */,
+			);
+			name = Database;
+			path = Turncast/Libraries/Firebase/Database;
+			sourceTree = SOURCE_ROOT;
+		};
 		5F29D95F2060E18F0014EF61 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +162,7 @@
 		5F29D96A2060E18F0014EF61 /* Turncast */ = {
 			isa = PBXGroup;
 			children = (
+				32438B6D2062B0F600BFF0F7 /* Firebase */,
 				5FEED7B620622EE600CB270D /* GoogleService-Info.plist */,
 				5F29D96B2060E18F0014EF61 /* AppDelegate.swift */,
 				5F29D96D2060E18F0014EF61 /* ViewController.swift */,
@@ -154,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FEED7EA2062398700CB270D /* GoogleSignIn.bundle in Resources */,
+				32438B932062B18E00BFF0F7 /* gRPCCertificates.bundle in Resources */,
 				5F29D9762060E18F0014EF61 /* LaunchScreen.storyboard in Resources */,
 				5FEED7B720622EE700CB270D /* GoogleService-Info.plist in Resources */,
 				5F29D9732060E18F0014EF61 /* Assets.xcassets in Resources */,
@@ -324,9 +416,11 @@
 					"$(PROJECT_DIR)/Turncast/Libraries/Google\\ SignIn",
 					"$(PROJECT_DIR)/Turncast/Libraries/Google\\ SignIn",
 					"$(PROJECT_DIR)/Turncast/Libraries/GoogleSignIn",
+					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Analytics",
 				);
 				INFOPLIST_FILE = Turncast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.turncastapp.turncast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -348,9 +442,11 @@
 					"$(PROJECT_DIR)/Turncast/Libraries/Google\\ SignIn",
 					"$(PROJECT_DIR)/Turncast/Libraries/Google\\ SignIn",
 					"$(PROJECT_DIR)/Turncast/Libraries/GoogleSignIn",
+					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Analytics",
 				);
 				INFOPLIST_FILE = Turncast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.turncastapp.turncast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
