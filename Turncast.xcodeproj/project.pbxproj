@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		32438B932062B18E00BFF0F7 /* gRPCCertificates.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 32438B7B2062B18E00BFF0F7 /* gRPCCertificates.bundle */; };
 		32438BA62062B33300BFF0F7 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B6F2062B18E00BFF0F7 /* FirebaseCore.framework */; };
+		32438BA92062B45F00BFF0F7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32438BA82062B45F00BFF0F7 /* LoginViewController.swift */; };
+		32438BAC2062B50F00BFF0F7 /* TC_Serv_Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32438BAB2062B50F00BFF0F7 /* TC_Serv_Auth.swift */; };
+		32438BAF2062B55500BFF0F7 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32438BAE2062B55500BFF0F7 /* Typealias.swift */; };
+		32438BB02062B6D800BFF0F7 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B832062B18E00BFF0F7 /* FirebaseAuth.framework */; };
+		32438BB12062B6E400BFF0F7 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B822062B18E00BFF0F7 /* GTMSessionFetcher.framework */; };
 		5F29D96C2060E18F0014EF61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F29D96B2060E18F0014EF61 /* AppDelegate.swift */; };
 		5F29D96E2060E18F0014EF61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F29D96D2060E18F0014EF61 /* ViewController.swift */; };
 		5F29D9712060E18F0014EF61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F29D96F2060E18F0014EF61 /* Main.storyboard */; };
@@ -41,6 +46,9 @@
 		32438B862062B18E00BFF0F7 /* leveldb-library.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "leveldb-library.framework"; sourceTree = "<group>"; };
 		32438B872062B18E00BFF0F7 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseDatabase.framework; sourceTree = "<group>"; };
 		32438B882062B18E00BFF0F7 /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Turncast/Libraries/Firebase/Firebase.h; sourceTree = SOURCE_ROOT; };
+		32438BA82062B45F00BFF0F7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		32438BAB2062B50F00BFF0F7 /* TC_Serv_Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TC_Serv_Auth.swift; sourceTree = "<group>"; };
+		32438BAE2062B55500BFF0F7 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		5F29D9682060E18F0014EF61 /* Turncast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Turncast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F29D96B2060E18F0014EF61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F29D96D2060E18F0014EF61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +70,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				32438BA62062B33300BFF0F7 /* FirebaseCore.framework in Frameworks */,
+				32438BB02062B6D800BFF0F7 /* FirebaseAuth.framework in Frameworks */,
+				32438BB12062B6E400BFF0F7 /* GTMSessionFetcher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +151,30 @@
 			path = Turncast/Libraries/Firebase/Database;
 			sourceTree = SOURCE_ROOT;
 		};
+		32438BA72062B43300BFF0F7 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				32438BA82062B45F00BFF0F7 /* LoginViewController.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		32438BAA2062B4FB00BFF0F7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				32438BAB2062B50F00BFF0F7 /* TC_Serv_Auth.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		32438BAD2062B53700BFF0F7 /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				32438BAE2062B55500BFF0F7 /* Typealias.swift */,
+			);
+			path = Extra;
+			sourceTree = "<group>";
+		};
 		5F29D95F2060E18F0014EF61 = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +196,9 @@
 		5F29D96A2060E18F0014EF61 /* Turncast */ = {
 			isa = PBXGroup;
 			children = (
+				32438BAD2062B53700BFF0F7 /* Extra */,
+				32438BAA2062B4FB00BFF0F7 /* Services */,
+				32438BA72062B43300BFF0F7 /* LoginView */,
 				32438B6D2062B0F600BFF0F7 /* Firebase */,
 				5FEED7B620622EE600CB270D /* GoogleService-Info.plist */,
 				5F29D96B2060E18F0014EF61 /* AppDelegate.swift */,
@@ -260,8 +297,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32438BAC2062B50F00BFF0F7 /* TC_Serv_Auth.swift in Sources */,
+				32438BA92062B45F00BFF0F7 /* LoginViewController.swift in Sources */,
 				5F29D96E2060E18F0014EF61 /* ViewController.swift in Sources */,
 				5F29D96C2060E18F0014EF61 /* AppDelegate.swift in Sources */,
+				32438BAF2062B55500BFF0F7 /* Typealias.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
