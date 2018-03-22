@@ -178,6 +178,14 @@
 			path = Extra;
 			sourceTree = "<group>";
 		};
+		32438BB42063A77000BFF0F7 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				32438B6D2062B0F600BFF0F7 /* Firebase */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
 		5F29D95F2060E18F0014EF61 = {
 			isa = PBXGroup;
 			children = (
@@ -199,10 +207,10 @@
 		5F29D96A2060E18F0014EF61 /* Turncast */ = {
 			isa = PBXGroup;
 			children = (
+				32438BB42063A77000BFF0F7 /* Libraries */,
 				32438BAD2062B53700BFF0F7 /* Extra */,
 				32438BAA2062B4FB00BFF0F7 /* Services */,
 				32438BA72062B43300BFF0F7 /* LoginView */,
-				32438B6D2062B0F600BFF0F7 /* Firebase */,
 				5FEED7B620622EE600CB270D /* GoogleService-Info.plist */,
 				5F29D96B2060E18F0014EF61 /* AppDelegate.swift */,
 				5F29D96D2060E18F0014EF61 /* ViewController.swift */,
