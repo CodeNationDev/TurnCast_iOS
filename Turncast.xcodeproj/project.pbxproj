@@ -16,6 +16,8 @@
 		32438BB12062B6E400BFF0F7 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B822062B18E00BFF0F7 /* GTMSessionFetcher.framework */; };
 		32438BB3206306BD00BFF0F7 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32438BB2206306BD00BFF0F7 /* Functions.swift */; };
 		32438BDF2064025000BFF0F7 /* UserTurnCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32438BDE2064025000BFF0F7 /* UserTurnCast.swift */; };
+		324573472064139E00A5D146 /* TC_Serv_User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324573462064139E00A5D146 /* TC_Serv_User.swift */; };
+		32457349206413AC00A5D146 /* TC_DB_Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32457348206413AC00A5D146 /* TC_DB_Collection.swift */; };
 		5F29D96C2060E18F0014EF61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F29D96B2060E18F0014EF61 /* AppDelegate.swift */; };
 		5F29D9712060E18F0014EF61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F29D96F2060E18F0014EF61 /* Main.storyboard */; };
 		5F29D9732060E18F0014EF61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F29D9722060E18F0014EF61 /* Assets.xcassets */; };
@@ -53,6 +55,8 @@
 		32438BB2206306BD00BFF0F7 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		32438BDA2064021200BFF0F7 /* Turncast-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Turncast-Bridging-Header.h"; sourceTree = "<group>"; };
 		32438BDE2064025000BFF0F7 /* UserTurnCast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTurnCast.swift; sourceTree = "<group>"; };
+		324573462064139E00A5D146 /* TC_Serv_User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TC_Serv_User.swift; sourceTree = "<group>"; };
+		32457348206413AC00A5D146 /* TC_DB_Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TC_DB_Collection.swift; sourceTree = "<group>"; };
 		5F29D9682060E18F0014EF61 /* Turncast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Turncast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F29D96B2060E18F0014EF61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F29D9702060E18F0014EF61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -165,6 +169,8 @@
 		32438BAA2062B4FB00BFF0F7 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				32457348206413AC00A5D146 /* TC_DB_Collection.swift */,
+				324573462064139E00A5D146 /* TC_Serv_User.swift */,
 				32438BAB2062B50F00BFF0F7 /* TC_Serv_Auth.swift */,
 			);
 			path = Services;
@@ -319,8 +325,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32457349206413AC00A5D146 /* TC_DB_Collection.swift in Sources */,
 				32438BAC2062B50F00BFF0F7 /* TC_Serv_Auth.swift in Sources */,
 				32438BA92062B45F00BFF0F7 /* LoginViewController.swift in Sources */,
+				324573472064139E00A5D146 /* TC_Serv_User.swift in Sources */,
 				32438BDF2064025000BFF0F7 /* UserTurnCast.swift in Sources */,
 				5F29D96C2060E18F0014EF61 /* AppDelegate.swift in Sources */,
 				32438BAF2062B55500BFF0F7 /* Typealias.swift in Sources */,
