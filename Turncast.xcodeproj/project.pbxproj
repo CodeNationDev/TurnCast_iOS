@@ -8,16 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		32438B932062B18E00BFF0F7 /* gRPCCertificates.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 32438B7B2062B18E00BFF0F7 /* gRPCCertificates.bundle */; };
-		32438BA62062B33300BFF0F7 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B6F2062B18E00BFF0F7 /* FirebaseCore.framework */; };
 		32438BA92062B45F00BFF0F7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32438BA82062B45F00BFF0F7 /* LoginViewController.swift */; };
 		32438BAC2062B50F00BFF0F7 /* TC_Serv_Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32438BAB2062B50F00BFF0F7 /* TC_Serv_Auth.swift */; };
 		32438BAF2062B55500BFF0F7 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32438BAE2062B55500BFF0F7 /* Typealias.swift */; };
-		32438BB02062B6D800BFF0F7 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B832062B18E00BFF0F7 /* FirebaseAuth.framework */; };
-		32438BB12062B6E400BFF0F7 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B822062B18E00BFF0F7 /* GTMSessionFetcher.framework */; };
 		32438BB3206306BD00BFF0F7 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32438BB2206306BD00BFF0F7 /* Functions.swift */; };
 		32438BDF2064025000BFF0F7 /* UserTurnCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32438BDE2064025000BFF0F7 /* UserTurnCast.swift */; };
 		324573472064139E00A5D146 /* TC_Serv_User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324573462064139E00A5D146 /* TC_Serv_User.swift */; };
 		32457349206413AC00A5D146 /* TC_DB_Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32457348206413AC00A5D146 /* TC_DB_Collection.swift */; };
+		324573522064145600A5D146 /* FirebaseFirestore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B792062B18E00BFF0F7 /* FirebaseFirestore.framework */; };
+		324573532064146600A5D146 /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B772062B18E00BFF0F7 /* Protobuf.framework */; };
+		324573542064146600A5D146 /* gRPC-Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B782062B18E00BFF0F7 /* gRPC-Core.framework */; };
+		324573552064146600A5D146 /* leveldb-library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B7C2062B18E00BFF0F7 /* leveldb-library.framework */; };
+		324573562064146600A5D146 /* gRPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B7D2062B18E00BFF0F7 /* gRPC.framework */; };
+		324573572064146600A5D146 /* gRPC-ProtoRPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B7E2062B18E00BFF0F7 /* gRPC-ProtoRPC.framework */; };
+		324573582064146600A5D146 /* BoringSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B7F2062B18E00BFF0F7 /* BoringSSL.framework */; };
+		324573592064146600A5D146 /* gRPC-RxLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B802062B18E00BFF0F7 /* gRPC-RxLibrary.framework */; };
+		3245735A2064147C00A5D146 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B6F2062B18E00BFF0F7 /* FirebaseCore.framework */; };
+		3245735B2064147C00A5D146 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B702062B18E00BFF0F7 /* FirebaseAnalytics.framework */; };
+		3245735C2064147C00A5D146 /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B712062B18E00BFF0F7 /* GoogleToolboxForMac.framework */; };
+		3245735D2064147C00A5D146 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B722062B18E00BFF0F7 /* nanopb.framework */; };
+		3245735E2064147C00A5D146 /* FirebaseNanoPB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B732062B18E00BFF0F7 /* FirebaseNanoPB.framework */; };
+		3245735F2064147C00A5D146 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B742062B18E00BFF0F7 /* FirebaseInstanceID.framework */; };
+		324573602064147C00A5D146 /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B752062B18E00BFF0F7 /* FirebaseCoreDiagnostics.framework */; };
+		324573612064148800A5D146 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B832062B18E00BFF0F7 /* FirebaseAuth.framework */; };
+		324573622064148A00A5D146 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B822062B18E00BFF0F7 /* GTMSessionFetcher.framework */; };
 		5F29D96C2060E18F0014EF61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F29D96B2060E18F0014EF61 /* AppDelegate.swift */; };
 		5F29D9712060E18F0014EF61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F29D96F2060E18F0014EF61 /* Main.storyboard */; };
 		5F29D9732060E18F0014EF61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F29D9722060E18F0014EF61 /* Assets.xcassets */; };
@@ -76,9 +90,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32438BA62062B33300BFF0F7 /* FirebaseCore.framework in Frameworks */,
-				32438BB02062B6D800BFF0F7 /* FirebaseAuth.framework in Frameworks */,
-				32438BB12062B6E400BFF0F7 /* GTMSessionFetcher.framework in Frameworks */,
+				324573522064145600A5D146 /* FirebaseFirestore.framework in Frameworks */,
+				324573532064146600A5D146 /* Protobuf.framework in Frameworks */,
+				324573542064146600A5D146 /* gRPC-Core.framework in Frameworks */,
+				324573612064148800A5D146 /* FirebaseAuth.framework in Frameworks */,
+				324573622064148A00A5D146 /* GTMSessionFetcher.framework in Frameworks */,
+				324573552064146600A5D146 /* leveldb-library.framework in Frameworks */,
+				324573562064146600A5D146 /* gRPC.framework in Frameworks */,
+				3245735A2064147C00A5D146 /* FirebaseCore.framework in Frameworks */,
+				3245735B2064147C00A5D146 /* FirebaseAnalytics.framework in Frameworks */,
+				3245735C2064147C00A5D146 /* GoogleToolboxForMac.framework in Frameworks */,
+				3245735D2064147C00A5D146 /* nanopb.framework in Frameworks */,
+				3245735E2064147C00A5D146 /* FirebaseNanoPB.framework in Frameworks */,
+				3245735F2064147C00A5D146 /* FirebaseInstanceID.framework in Frameworks */,
+				324573602064147C00A5D146 /* FirebaseCoreDiagnostics.framework in Frameworks */,
+				324573572064146600A5D146 /* gRPC-ProtoRPC.framework in Frameworks */,
+				324573582064146600A5D146 /* BoringSSL.framework in Frameworks */,
+				324573592064146600A5D146 /* gRPC-RxLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

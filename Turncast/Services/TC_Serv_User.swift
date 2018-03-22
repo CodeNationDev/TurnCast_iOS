@@ -7,8 +7,7 @@
 //
 
 import Foundation
-import FirebaseFirestore
-import FirebaseAuth
+
 
 final class TC_Serv_User {
     
