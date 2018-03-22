@@ -15,8 +15,8 @@
 		32438BB02062B6D800BFF0F7 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B832062B18E00BFF0F7 /* FirebaseAuth.framework */; };
 		32438BB12062B6E400BFF0F7 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B822062B18E00BFF0F7 /* GTMSessionFetcher.framework */; };
 		32438BB3206306BD00BFF0F7 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32438BB2206306BD00BFF0F7 /* Functions.swift */; };
+		32438BDF2064025000BFF0F7 /* UserTurnCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32438BDE2064025000BFF0F7 /* UserTurnCast.swift */; };
 		5F29D96C2060E18F0014EF61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F29D96B2060E18F0014EF61 /* AppDelegate.swift */; };
-		5F29D96E2060E18F0014EF61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F29D96D2060E18F0014EF61 /* ViewController.swift */; };
 		5F29D9712060E18F0014EF61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F29D96F2060E18F0014EF61 /* Main.storyboard */; };
 		5F29D9732060E18F0014EF61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F29D9722060E18F0014EF61 /* Assets.xcassets */; };
 		5F29D9762060E18F0014EF61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F29D9742060E18F0014EF61 /* LaunchScreen.storyboard */; };
@@ -51,9 +51,10 @@
 		32438BAB2062B50F00BFF0F7 /* TC_Serv_Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TC_Serv_Auth.swift; sourceTree = "<group>"; };
 		32438BAE2062B55500BFF0F7 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		32438BB2206306BD00BFF0F7 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		32438BDA2064021200BFF0F7 /* Turncast-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Turncast-Bridging-Header.h"; sourceTree = "<group>"; };
+		32438BDE2064025000BFF0F7 /* UserTurnCast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTurnCast.swift; sourceTree = "<group>"; };
 		5F29D9682060E18F0014EF61 /* Turncast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Turncast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F29D96B2060E18F0014EF61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5F29D96D2060E18F0014EF61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5F29D9702060E18F0014EF61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F29D9722060E18F0014EF61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F29D9752060E18F0014EF61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -186,6 +187,14 @@
 			path = Libraries;
 			sourceTree = "<group>";
 		};
+		32438BDD2064023200BFF0F7 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				32438BDE2064025000BFF0F7 /* UserTurnCast.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		5F29D95F2060E18F0014EF61 = {
 			isa = PBXGroup;
 			children = (
@@ -207,17 +216,18 @@
 		5F29D96A2060E18F0014EF61 /* Turncast */ = {
 			isa = PBXGroup;
 			children = (
+				32438BDD2064023200BFF0F7 /* Entities */,
 				32438BB42063A77000BFF0F7 /* Libraries */,
 				32438BAD2062B53700BFF0F7 /* Extra */,
 				32438BAA2062B4FB00BFF0F7 /* Services */,
 				32438BA72062B43300BFF0F7 /* LoginView */,
 				5FEED7B620622EE600CB270D /* GoogleService-Info.plist */,
 				5F29D96B2060E18F0014EF61 /* AppDelegate.swift */,
-				5F29D96D2060E18F0014EF61 /* ViewController.swift */,
 				5F29D96F2060E18F0014EF61 /* Main.storyboard */,
 				5F29D9722060E18F0014EF61 /* Assets.xcassets */,
 				5F29D9742060E18F0014EF61 /* LaunchScreen.storyboard */,
 				5F29D9772060E18F0014EF61 /* Info.plist */,
+				32438BDA2064021200BFF0F7 /* Turncast-Bridging-Header.h */,
 			);
 			path = Turncast;
 			sourceTree = "<group>";
@@ -265,6 +275,7 @@
 				TargetAttributes = {
 					5F29D9672060E18F0014EF61 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -310,7 +321,7 @@
 			files = (
 				32438BAC2062B50F00BFF0F7 /* TC_Serv_Auth.swift in Sources */,
 				32438BA92062B45F00BFF0F7 /* LoginViewController.swift in Sources */,
-				5F29D96E2060E18F0014EF61 /* ViewController.swift in Sources */,
+				32438BDF2064025000BFF0F7 /* UserTurnCast.swift in Sources */,
 				5F29D96C2060E18F0014EF61 /* AppDelegate.swift in Sources */,
 				32438BAF2062B55500BFF0F7 /* Typealias.swift in Sources */,
 				32438BB3206306BD00BFF0F7 /* Functions.swift in Sources */,
@@ -458,6 +469,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z346NYZ3TJ;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -475,6 +487,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.turncastapp.turncast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Turncast/Turncast-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -484,6 +498,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z346NYZ3TJ;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -501,6 +516,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.turncastapp.turncast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Turncast/Turncast-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

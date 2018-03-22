@@ -15,7 +15,7 @@ class LoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        let usuario = "prueba@prueba.com"
+        let usuario = "pruebasssss@prueba.com"
         let pass = "prueba"
         
         TC_Serv_Auth().createUser(usuario, pass) { (error, user) in
