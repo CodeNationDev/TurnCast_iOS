@@ -22,6 +22,10 @@ class TC_DB_Collection {
         return mainDB.collection("USERS")
     }
     
+    var channel : CollectionReference {
+        return mainDB.collection("CHANNEL")
+    }
+    
     var podcast : CollectionReference {
         return mainDB.collection("PODCAST")
     }

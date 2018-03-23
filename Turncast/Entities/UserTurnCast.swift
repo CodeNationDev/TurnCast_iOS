@@ -23,6 +23,14 @@ final class UserTurnCast {
     
     
     
+    /// Inicialización por parámetros  (deprecated, mejor usar por documentos)
+    ///
+    /// - Parameters:
+    ///   - uid: uid de Firebase
+    ///   - name: name
+    ///   - email: email válido
+    ///   - surname: apellido
+    ///   - nickname: nick
     init(_ uid: String!, _ name: String!, _ email: String!, _ surname: String!, _ nickname: String!){
         self.uid = uid
         self.name = name
@@ -32,6 +40,9 @@ final class UserTurnCast {
     }
     
     
+    /// Inicializa mediante un Document de Firebase
+    ///
+    /// - Parameter document: DocumentSnapshot
     init(_ document: DocumentSnapshot){
         self.uid = document.documentID
         self.name = document.get("name") as? String ?? "name"

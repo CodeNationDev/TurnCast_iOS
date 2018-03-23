@@ -32,6 +32,10 @@
 		324573602064147C00A5D146 /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B752062B18E00BFF0F7 /* FirebaseCoreDiagnostics.framework */; };
 		324573612064148800A5D146 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B832062B18E00BFF0F7 /* FirebaseAuth.framework */; };
 		324573622064148A00A5D146 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B822062B18E00BFF0F7 /* GTMSessionFetcher.framework */; };
+		32457364206479DC00A5D146 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32457363206479DC00A5D146 /* Chapter.swift */; };
+		3245736620647A0500A5D146 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3245736520647A0500A5D146 /* Channel.swift */; };
+		3245736820647A3100A5D146 /* TC_Serv_Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3245736720647A3100A5D146 /* TC_Serv_Channel.swift */; };
+		3245736A20647A4700A5D146 /* TC_Serv_Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3245736920647A4700A5D146 /* TC_Serv_Chapter.swift */; };
 		5F29D96C2060E18F0014EF61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F29D96B2060E18F0014EF61 /* AppDelegate.swift */; };
 		5F29D9712060E18F0014EF61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F29D96F2060E18F0014EF61 /* Main.storyboard */; };
 		5F29D9732060E18F0014EF61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F29D9722060E18F0014EF61 /* Assets.xcassets */; };
@@ -71,6 +75,10 @@
 		32438BDE2064025000BFF0F7 /* UserTurnCast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTurnCast.swift; sourceTree = "<group>"; };
 		324573462064139E00A5D146 /* TC_Serv_User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TC_Serv_User.swift; sourceTree = "<group>"; };
 		32457348206413AC00A5D146 /* TC_DB_Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TC_DB_Collection.swift; sourceTree = "<group>"; };
+		32457363206479DC00A5D146 /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
+		3245736520647A0500A5D146 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		3245736720647A3100A5D146 /* TC_Serv_Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TC_Serv_Channel.swift; sourceTree = "<group>"; };
+		3245736920647A4700A5D146 /* TC_Serv_Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TC_Serv_Chapter.swift; sourceTree = "<group>"; };
 		5F29D9682060E18F0014EF61 /* Turncast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Turncast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F29D96B2060E18F0014EF61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F29D9702060E18F0014EF61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -200,6 +208,8 @@
 				32457348206413AC00A5D146 /* TC_DB_Collection.swift */,
 				324573462064139E00A5D146 /* TC_Serv_User.swift */,
 				32438BAB2062B50F00BFF0F7 /* TC_Serv_Auth.swift */,
+				3245736720647A3100A5D146 /* TC_Serv_Channel.swift */,
+				3245736920647A4700A5D146 /* TC_Serv_Chapter.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -225,6 +235,8 @@
 			isa = PBXGroup;
 			children = (
 				32438BDE2064025000BFF0F7 /* UserTurnCast.swift */,
+				32457363206479DC00A5D146 /* Chapter.swift */,
+				3245736520647A0500A5D146 /* Channel.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -353,9 +365,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3245736A20647A4700A5D146 /* TC_Serv_Chapter.swift in Sources */,
 				32457349206413AC00A5D146 /* TC_DB_Collection.swift in Sources */,
+				3245736820647A3100A5D146 /* TC_Serv_Channel.swift in Sources */,
+				3245736620647A0500A5D146 /* Channel.swift in Sources */,
 				32438BAC2062B50F00BFF0F7 /* TC_Serv_Auth.swift in Sources */,
 				32438BA92062B45F00BFF0F7 /* LoginViewController.swift in Sources */,
+				32457364206479DC00A5D146 /* Chapter.swift in Sources */,
 				324573472064139E00A5D146 /* TC_Serv_User.swift in Sources */,
 				32438BDF2064025000BFF0F7 /* UserTurnCast.swift in Sources */,
 				5F29D96C2060E18F0014EF61 /* AppDelegate.swift in Sources */,
@@ -521,7 +537,7 @@
 				INFOPLIST_FILE = Turncast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.turncastapp.turncast;
+				PRODUCT_BUNDLE_IDENTIFIER = com.turncastapp.turncasto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Turncast/Turncast-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -550,7 +566,7 @@
 				INFOPLIST_FILE = Turncast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.turncastapp.turncast;
+				PRODUCT_BUNDLE_IDENTIFIER = com.turncastapp.turncasto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Turncast/Turncast-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
