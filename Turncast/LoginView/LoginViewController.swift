@@ -10,21 +10,15 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var user1BTN: UIButton!
+    @IBOutlet weak var user2BTN: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        let usuario = "pruebasssss@prueba.com"
-        let pass = "prueba"
-        
-        TC_Serv_Auth().createUser(usuario, pass) { (error, user) in
-            if error == nil {
-                self.performSegue(withIdentifier: "showMain", sender: nil)
-            } else {
-                print(error!)
-            }
-        }
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,6 +29,33 @@ class LoginViewController: UIViewController {
     }
     
 
+    @IBAction func doLogin(_ sender: UIButton) {
+        var user = ""
+        if sender == user1BTN {
+            user = "prueba@prueba.com"
+        } else if sender == user2BTN {
+            user = "pruebasssss@prueba.com"
+        }
+        
+        let pass = "prueba"
+        
+        TC_Serv_Auth().loginUser(user, pass) { (error, user) in
+            if error == nil {
+                self.performSegue(withIdentifier: "showMain", sender: nil)
+            }
+            else {
+                print(error as Any)
+            }
+        }
+        
+//        TC_Serv_Auth().createUser(user, pass) { (error, user) in
+//            if error == nil {
+//                self.performSegue(withIdentifier: "showMain", sender: nil)
+//            } else {
+//                print(error!)
+//            }
+//        }
+    }
     /*
     // MARK: - Navigation
 
