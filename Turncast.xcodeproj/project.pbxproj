@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32118E542066AED600983E60 /* MainUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32118E522066AED600983E60 /* MainUserViewController.swift */; };
+		32118E552066AED600983E60 /* MainUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32118E532066AED600983E60 /* MainUserViewController.xib */; };
+		32118E572067CF3200983E60 /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32118E562067CF3200983E60 /* ChatRoom.swift */; };
+		32118E592067CFF000983E60 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32118E582067CFF000983E60 /* Message.swift */; };
+		32118E5B206CEBA200983E60 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32118E5A206CEBA200983E60 /* MainTabViewController.swift */; };
 		32438B932062B18E00BFF0F7 /* gRPCCertificates.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 32438B7B2062B18E00BFF0F7 /* gRPCCertificates.bundle */; };
 		32438BA92062B45F00BFF0F7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32438BA82062B45F00BFF0F7 /* LoginViewController.swift */; };
 		32438BAC2062B50F00BFF0F7 /* TC_Serv_Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32438BAB2062B50F00BFF0F7 /* TC_Serv_Auth.swift */; };
@@ -46,6 +51,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32118E522066AED600983E60 /* MainUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUserViewController.swift; sourceTree = "<group>"; };
+		32118E532066AED600983E60 /* MainUserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainUserViewController.xib; sourceTree = "<group>"; };
+		32118E562067CF3200983E60 /* ChatRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
+		32118E582067CFF000983E60 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		32118E5A206CEBA200983E60 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		32438B6F2062B18E00BFF0F7 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
 		32438B702062B18E00BFF0F7 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
 		32438B712062B18E00BFF0F7 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleToolboxForMac.framework; sourceTree = "<group>"; };
@@ -123,6 +133,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32118E512066AEB900983E60 /* userView */ = {
+			isa = PBXGroup;
+			children = (
+				32118E522066AED600983E60 /* MainUserViewController.swift */,
+				32118E532066AED600983E60 /* MainUserViewController.xib */,
+			);
+			path = userView;
+			sourceTree = "<group>";
+		};
 		32438B6D2062B0F600BFF0F7 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +258,8 @@
 				32438BDE2064025000BFF0F7 /* UserTurnCast.swift */,
 				32457363206479DC00A5D146 /* Chapter.swift */,
 				3245736520647A0500A5D146 /* Channel.swift */,
+				32118E562067CF3200983E60 /* ChatRoom.swift */,
+				32118E582067CFF000983E60 /* Message.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -246,7 +267,9 @@
 		3245736B2065032F00A5D146 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				32118E512066AEB900983E60 /* userView */,
 				3245736C2065033900A5D146 /* mainView */,
+				32118E5A206CEBA200983E60 /* MainTabViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -370,6 +393,7 @@
 			files = (
 				5FEED7EA2062398700CB270D /* GoogleSignIn.bundle in Resources */,
 				32438B932062B18E00BFF0F7 /* gRPCCertificates.bundle in Resources */,
+				32118E552066AED600983E60 /* MainUserViewController.xib in Resources */,
 				5F29D9762060E18F0014EF61 /* LaunchScreen.storyboard in Resources */,
 				5FEED7B720622EE700CB270D /* GoogleService-Info.plist in Resources */,
 				5F29D9732060E18F0014EF61 /* Assets.xcassets in Resources */,
@@ -384,8 +408,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32118E5B206CEBA200983E60 /* MainTabViewController.swift in Sources */,
+				32118E542066AED600983E60 /* MainUserViewController.swift in Sources */,
 				3245736A20647A4700A5D146 /* TC_Serv_Chapter.swift in Sources */,
 				3245736E2065035500A5D146 /* MainViewViewController.swift in Sources */,
+				32118E572067CF3200983E60 /* ChatRoom.swift in Sources */,
 				32457349206413AC00A5D146 /* TC_DB_Collection.swift in Sources */,
 				3245736820647A3100A5D146 /* TC_Serv_Channel.swift in Sources */,
 				3245736620647A0500A5D146 /* Channel.swift in Sources */,
@@ -395,6 +422,7 @@
 				324573472064139E00A5D146 /* TC_Serv_User.swift in Sources */,
 				32438BDF2064025000BFF0F7 /* UserTurnCast.swift in Sources */,
 				5F29D96C2060E18F0014EF61 /* AppDelegate.swift in Sources */,
+				32118E592067CFF000983E60 /* Message.swift in Sources */,
 				32438BAF2062B55500BFF0F7 /* Typealias.swift in Sources */,
 				32438BB3206306BD00BFF0F7 /* Functions.swift in Sources */,
 			);
@@ -542,6 +570,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z346NYZ3TJ;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -559,6 +588,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.turncastapp.turncast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Turncast/Turncast-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -571,6 +601,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z346NYZ3TJ;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -588,6 +619,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.turncastapp.turncast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Turncast/Turncast-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

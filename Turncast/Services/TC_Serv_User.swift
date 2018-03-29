@@ -9,7 +9,7 @@
 import Foundation
 
 
-final class TC_Serv_User {
+struct TC_Serv_User {
     
     private let servDB = TC_DB_Collection()
     

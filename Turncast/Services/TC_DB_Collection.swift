@@ -10,7 +10,7 @@
 import Foundation
 import FirebaseFirestore
 
-class TC_DB_Collection {
+struct TC_DB_Collection {
     
     //    private static let _shared = Service_Database()
     
