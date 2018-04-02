@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -88,6 +88,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="newMessage:" destination="ePl-PP-Jmz" eventType="editingDidEndOnExit" id="Frb-4M-e3H"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gD9-N0-nDv">
                                         <rect key="frame" x="325" y="0.0" width="50" height="30"/>
@@ -97,13 +100,16 @@
                                             <constraint firstAttribute="height" constant="30" id="Lqe-A6-p4n"/>
                                         </constraints>
                                         <state key="normal" title="Enviar"/>
+                                        <connections>
+                                            <action selector="newMessage:" destination="ePl-PP-Jmz" eventType="touchUpInside" id="wcE-rh-iRx"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Lg4-TC-Np4"/>
                                 </constraints>
                             </stackView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vm7-yB-Oj0">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vm7-yB-Oj0">
                                 <rect key="frame" x="0.0" y="45" width="375" height="543"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9rK-nu-voT">
@@ -113,13 +119,30 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="b7I-AC-AYL">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="message" id="b7I-AC-AYL" customClass="mainViewCollectionViewCell" customModule="Turncast" customModuleProvider="target">
                                         <rect key="frame" x="2" y="0.0" width="371" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="371" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ck0-k4-qhh">
+                                                    <rect key="frame" x="0.0" y="0.0" width="371" height="50"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="ck0-k4-qhh" secondAttribute="bottom" id="NTw-2r-tPU"/>
+                                            <constraint firstItem="ck0-k4-qhh" firstAttribute="top" secondItem="b7I-AC-AYL" secondAttribute="top" id="Va2-0l-yhK"/>
+                                            <constraint firstAttribute="trailing" secondItem="ck0-k4-qhh" secondAttribute="trailing" id="crx-57-icA"/>
+                                            <constraint firstItem="ck0-k4-qhh" firstAttribute="leading" secondItem="b7I-AC-AYL" secondAttribute="leading" id="mnx-8e-7zu"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="text" destination="ck0-k4-qhh" id="7aU-ce-rkS"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -142,13 +165,20 @@
                     <tabBarItem key="tabBarItem" title="Item" id="ivP-dS-X8C"/>
                     <connections>
                         <outlet property="emailUserLBL" destination="vM1-ru-wMV" id="dUI-rB-grn"/>
+                        <outlet property="mesagesCLLCTN" destination="vm7-yB-Oj0" id="UZg-lt-5QZ"/>
                         <outlet property="newTextTF" destination="zT1-eQ-hX2" id="g3G-3M-NuA"/>
                         <outlet property="sendTextBTN" destination="gD9-N0-nDv" id="epQ-Wm-vmn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tfi-dI-uYl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="eL3-E6-9SN">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <viewLayoutGuide key="safeArea" id="eiw-zn-WTU"/>
+                </view>
             </objects>
-            <point key="canvasLocation" x="1623" y="25"/>
+            <point key="canvasLocation" x="1621.5999999999999" y="24.7376311844078"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="KrQ-Oj-qrG">
@@ -156,6 +186,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="2RB-jf-Qho" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DYq-Kc-ZyS">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

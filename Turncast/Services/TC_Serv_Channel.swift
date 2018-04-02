@@ -34,4 +34,42 @@ struct TC_Serv_Channel {
         }
         
     }
+    
+    func returnMessages(_ channel: String, _ completionHandler: @escaping CompletionMessages){
+        var messages = [Message]()
+        servDB.channel.document(channel).collection("messages").getDocuments(completion: { (snaps, error) in
+            if error != nil {
+                
+            } else {
+                for snap in snaps!.documents {
+                    print("\(snap.documentID) => \(snap.data())")
+                    let mes = Message(snap)
+                    messages.append(mes)
+                }
+                completionHandler(nil, messages)
+            }
+        })
+    }
+    
+    func newMessage(_ channel: String!, _ message: String!, _ userUID: String!, _ completionHandler: @escaping CompletionBool) {
+        
+        let profile: ProfileAnyHashable = [
+            "message": message,
+            "userUID": userUID,
+            "time": FieldValue.serverTimestamp()
+        ]
+        servDB.channel.document(channel).collection("messages").document("\(Date().timeIntervalSince1970)-\(userUID!)").setData(profile) { (error) in
+            if error != nil {
+                completionHandler(error?.localizedDescription, false)
+            } else {
+                completionHandler(nil, true)
+            }
+        }
+    }
+    
+    func messagesCollection(_ channel: String!) -> CollectionReference {
+        return servDB.channel.document(channel).collection("messages")
+    }
+    
+    
 }
