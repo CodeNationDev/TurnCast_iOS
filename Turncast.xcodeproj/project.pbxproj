@@ -48,7 +48,6 @@
 		5F29D9732060E18F0014EF61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F29D9722060E18F0014EF61 /* Assets.xcassets */; };
 		5F29D9762060E18F0014EF61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F29D9742060E18F0014EF61 /* LaunchScreen.storyboard */; };
 		5FEED7B720622EE700CB270D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FEED7B620622EE600CB270D /* GoogleService-Info.plist */; };
-		5FEED7EA2062398700CB270D /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5FEED7E92062398600CB270D /* GoogleSignIn.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,7 +101,6 @@
 		5FEED7B620622EE600CB270D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5FEED7DB2062343C00CB270D /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		5FEED7DD2062344300CB270D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		5FEED7E92062398600CB270D /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleSignIn.bundle; path = Turncast/Libraries/GoogleSignIn/GoogleSignIn.bundle; sourceTree = "<group>"; };
 		5FEED7EB20623A0400CB270D /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = Turncast/Libraries/GoogleSignIn/GoogleSignIn.framework; sourceTree = "<group>"; };
 		5FEED7EC20623A0400CB270D /* GoogleSignInDependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignInDependencies.framework; path = Turncast/Libraries/GoogleSignIn/GoogleSignInDependencies.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -288,7 +286,6 @@
 		5F29D95F2060E18F0014EF61 = {
 			isa = PBXGroup;
 			children = (
-				5FEED7E92062398600CB270D /* GoogleSignIn.bundle */,
 				5F29D96A2060E18F0014EF61 /* Turncast */,
 				5F29D9692060E18F0014EF61 /* Products */,
 				5FEED7B82062312D00CB270D /* Frameworks */,
@@ -394,7 +391,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FEED7EA2062398700CB270D /* GoogleSignIn.bundle in Resources */,
 				32438B932062B18E00BFF0F7 /* gRPCCertificates.bundle in Resources */,
 				32118E552066AED600983E60 /* MainUserViewController.xib in Resources */,
 				5F29D9762060E18F0014EF61 /* LaunchScreen.storyboard in Resources */,
@@ -582,9 +578,6 @@
 					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Auth",
 					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Database",
 					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Firestore",
-					"$(PROJECT_DIR)/Turncast/Libraries/Google\\ SignIn",
-					"$(PROJECT_DIR)/Turncast/Libraries/Google\\ SignIn",
-					"$(PROJECT_DIR)/Turncast/Libraries/GoogleSignIn",
 					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Analytics",
 				);
 				INFOPLIST_FILE = Turncast/Info.plist;
@@ -613,9 +606,6 @@
 					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Auth",
 					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Database",
 					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Firestore",
-					"$(PROJECT_DIR)/Turncast/Libraries/Google\\ SignIn",
-					"$(PROJECT_DIR)/Turncast/Libraries/Google\\ SignIn",
-					"$(PROJECT_DIR)/Turncast/Libraries/GoogleSignIn",
 					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Analytics",
 				);
 				INFOPLIST_FILE = Turncast/Info.plist;
