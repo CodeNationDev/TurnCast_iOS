@@ -7,14 +7,20 @@
 //
 
 import UIKit
+import GoogleSignIn
 
-class LoginViewController: UIViewController {
-
+class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
+   
     @IBOutlet weak var user1BTN: UIButton!
     @IBOutlet weak var user2BTN: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        GIDSignIn.sharedInstance().uiDelegate = self
+        GIDSignIn.sharedInstance().delegate = self
+        
+        // Login de Google automático si ya está logado.
+        GIDSignIn.sharedInstance().signInSilently()
 
         // Do any additional setup after loading the view.
         
@@ -28,6 +34,17 @@ class LoginViewController: UIViewController {
         
     }
     
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if let error = error {
+            print(error.localizedDescription)
+            return
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.15
+        ) {
+            print("User logged!!!")
+        }
+        
+    }
 
     @IBAction func doLogin(_ sender: UIButton) {
         var user = ""
@@ -47,6 +64,8 @@ class LoginViewController: UIViewController {
                 print(error as Any)
             }
         }
+        
+        
         
 //        TC_Serv_Auth().createUser(user, pass) { (error, user) in
 //            if error == nil {
