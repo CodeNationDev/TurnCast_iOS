@@ -1,0 +1,33 @@
+
+/* Class = "UILabel"; text = "Login"; ObjectID = "1j4-dE-iSh"; */
+"1j4-dE-iSh.text" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Login User Dos"; ObjectID = "JjV-hn-eXV"; */
+"JjV-hn-eXV.normalTitle" = "Login User Dos";
+
+/* Class = "UIButton"; normalTitle = "Login User Uno"; ObjectID = "Mmo-tq-rVG"; */
+"Mmo-tq-rVG.normalTitle" = "Login User Uno";
+
+/* Class = "UITextField"; text = "eMail"; ObjectID = "Xwn-yG-6g9"; */
+"Xwn-yG-6g9.text" = "eMail";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ck0-k4-qhh"; */
+"ck0-k4-qhh.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Enviar"; ObjectID = "gD9-N0-nDv"; */
+"gD9-N0-nDv.normalTitle" = "Enviar";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "ivP-dS-X8C"; */
+"ivP-dS-X8C.title" = "Item";
+
+/* Class = "UITextField"; text = "password"; ObjectID = "lyc-to-wDu"; */
+"lyc-to-wDu.text" = "password";
+
+/* Class = "UITextField"; text = "nickname"; ObjectID = "nS6-lh-a9u"; */
+"nS6-lh-a9u.text" = "nickname";
+
+/* Class = "UIButton"; normalTitle = "Acceder"; ObjectID = "nYW-is-opa"; */
+"nYW-is-opa.normalTitle" = "Acceder";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "vM1-ru-wMV"; */
+"vM1-ru-wMV.text" = "Label";

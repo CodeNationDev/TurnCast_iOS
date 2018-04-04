@@ -8,10 +8,15 @@
 
 import UIKit
 
+
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var user1BTN: UIButton!
     @IBOutlet weak var user2BTN: UIButton!
+    @IBOutlet weak var userMailTXF: UITextField!
+    @IBOutlet weak var userNicknameTXF: UITextField!
+    @IBOutlet weak var userPassTXF: UITextField!
+    @IBOutlet weak var loginBTN: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +33,14 @@ class LoginViewController: UIViewController {
         
     }
     
-
+    @IBAction func loginButton(_ sender: Any) {
+        
+        //Código al pulsar el botón acceder.
+        
+        
+        
+    }
+    
     @IBAction func doLogin(_ sender: UIButton) {
         var user = ""
         if sender == user1BTN {
