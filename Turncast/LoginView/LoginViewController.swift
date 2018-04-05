@@ -36,6 +36,11 @@ class LoginViewController: UIViewController {
     @IBAction func loginButton(_ sender: Any) {
         
         //Código al pulsar el botón acceder.
+        let usermail = userMailTXF.text
+        let pass = userPassTXF.text
+        
+        let loginOK = loginFirebase(user: usermail!, pass: pass!)
+        if(!isValidEmail(test: usermail!)){return}
         
         
         
