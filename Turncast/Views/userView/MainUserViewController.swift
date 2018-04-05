@@ -10,16 +10,38 @@ import UIKit
 
 class MainUserViewController: UIViewController {
 
+    
+    @IBOutlet weak var userMailLBL: UILabel!
+    @IBOutlet weak var userNickLBL: UILabel!
+    @IBOutlet weak var userImage: UIImageView!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        imageModify()
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+    
+    
+    func imageModify(){
+        userImage.layer.cornerRadius = userImage.frame.size.width / 2
+        userImage.clipsToBounds = true
+        userImage.layer.borderWidth = 3.0
+        userImage.layer.borderColor = (UIColor.cyan as! CGColor)
+        
     }
+    
+    
+    
+    
+    
     
 
 

@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainUserViewController" customModule="Turncast" customModuleProvider="target">
             <connections>
+                <outlet property="userImage" destination="cHX-dB-Iz1" id="6mG-KH-CyY"/>
+                <outlet property="userMailLBL" destination="mUg-0T-sBO" id="xcQ-mr-KhU"/>
+                <outlet property="userNickLBL" destination="Btk-mH-j1n" id="hUs-hW-gos"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,8 +22,52 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_user" translatesAutoresizingMaskIntoConstraints="NO" id="ivE-NX-7An">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TurnCast User Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUg-0T-sBO">
+                    <rect key="frame" x="20" y="40" width="374" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="LLG-YF-3HL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.96086179851577258" green="1" blue="0.9547261150018953" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TurnCast User Nick" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Btk-mH-j1n">
+                    <rect key="frame" x="20" y="73" width="374" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="LQa-l0-LmP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.96086179849999998" green="1" blue="0.95472611500000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="userBase" translatesAutoresizingMaskIntoConstraints="NO" id="cHX-dB-Iz1">
+                    <rect key="frame" x="107" y="106" width="200" height="200"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ivE-NX-7An" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="1dk-LI-hAT"/>
+                <constraint firstItem="ivE-NX-7An" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7Tg-t3-xwt"/>
+                <constraint firstItem="Btk-mH-j1n" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7vN-Kh-wnj"/>
+                <constraint firstItem="ivE-NX-7An" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="KAL-4M-RoY"/>
+                <constraint firstItem="mUg-0T-sBO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="W2P-6K-CCW"/>
+                <constraint firstItem="Btk-mH-j1n" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="aNw-lx-fxa"/>
+                <constraint firstItem="ivE-NX-7An" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jEq-8v-bdk"/>
+                <constraint firstItem="Btk-mH-j1n" firstAttribute="top" secondItem="mUg-0T-sBO" secondAttribute="bottom" constant="8" id="n77-cs-Ebj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mUg-0T-sBO" secondAttribute="trailing" constant="20" id="qoL-Yq-Wz6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Btk-mH-j1n" secondAttribute="trailing" constant="20" id="tty-rx-ctx"/>
+                <constraint firstItem="mUg-0T-sBO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="xwY-5A-Q6G"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>
+    <resources>
+        <image name="bg_user" width="320" height="569"/>
+        <image name="userBase" width="400" height="400"/>
+    </resources>
 </document>
