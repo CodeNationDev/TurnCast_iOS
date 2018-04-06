@@ -17,6 +17,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var userNicknameTXF: UITextField!
     @IBOutlet weak var userPassTXF: UITextField!
     @IBOutlet weak var loginBTN: UIButton!
+    @IBOutlet weak var blur: UIVisualEffectView!
+    @IBOutlet var newUserPopUp: UIView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,12 +29,6 @@ class LoginViewController: UIViewController {
 
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-        
-        
-    }
     
     @IBAction func loginButton(_ sender: Any) {
         
@@ -73,4 +70,47 @@ class LoginViewController: UIViewController {
         
     }
 
+    @IBAction func showNewUserPopUp(_ sender: Any) {
+        
+        animatePopUp()
+    }
+    
+    
+    @IBAction func cancelNewUserPopUp(_ sender: Any) {
+        animateOutPopUp()
+    }
+    
+    
+    
+    
+    
+    func animatePopUp(){
+        blur.isHidden = false
+        blur.alpha = 0
+        self.view.addSubview(newUserPopUp)
+        newUserPopUp.center = self.view.center
+        newUserPopUp.transform = CGAffineTransform.init(scaleX: 1.4, y: 1.4)
+        newUserPopUp.alpha = 0
+        
+        UIView.animate(withDuration: 0.4) {
+            self.blur.alpha = 1
+            self.newUserPopUp.alpha = 1
+            self.newUserPopUp.transform = CGAffineTransform.identity
+        }
+    }
+    
+    func animateOutPopUp(){
+        UIView.animate(withDuration: 0.4, animations: {
+            self.newUserPopUp.transform = CGAffineTransform.init(scaleX: 1.4, y: 1.4)
+            self.newUserPopUp.alpha = 0
+            self.blur.alpha = 0
+        }) { (success) in
+            self.blur.isHidden = true
+            self.newUserPopUp.removeFromSuperview()
+        }
+    }
+    
+    
+    
+    
 }
