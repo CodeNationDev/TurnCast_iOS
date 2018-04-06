@@ -39,10 +39,16 @@ class LoginViewController: UIViewController {
         let usermail = userMailTXF.text
         let pass = userPassTXF.text
         
-        let loginOK = loginFirebase(user: usermail!, pass: pass!)
         if(!isValidEmail(test: usermail!)){return}
-        
-        
+        if((pass?.count)!<6){return}
+        TC_Serv_Auth().loginUser(usermail, pass) { (error, user) in
+            if error == nil {
+                self.performSegue(withIdentifier: "showMain", sender: nil)
+            }
+            else {
+                print(error as Any)
+            }
+        }
         
     }
     
@@ -65,22 +71,6 @@ class LoginViewController: UIViewController {
             }
         }
         
-//        TC_Serv_Auth().createUser(user, pass) { (error, user) in
-//            if error == nil {
-//                self.performSegue(withIdentifier: "showMain", sender: nil)
-//            } else {
-//                print(error!)
-//            }
-//        }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

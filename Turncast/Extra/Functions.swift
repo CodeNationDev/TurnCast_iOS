@@ -30,21 +30,7 @@ public func TC_errorAlertView(_ message: String!) -> UIAlertController{
     return alertVC
 }
 
-public func loginFirebase(user: String, pass: String) -> String{
-    
-    var result = ""
-    
-    TC_Serv_Auth().loginUser(user, pass) { (error, user) in
-        if error == nil {
-            result = "OK"
-        }
-        else {
-            print(error as Any)
-            result = error!
-        }
-    }
-    return result
-}
+
 
 
 

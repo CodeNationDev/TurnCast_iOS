@@ -34,7 +34,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uYy-z4-bj2">
-                                <rect key="frame" x="80" y="298" width="215" height="90"/>
+                                <rect key="frame" x="80" y="328" width="215" height="60"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="eMail" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Xwn-yG-6g9">
                                         <rect key="frame" x="0.0" y="0.0" width="215" height="30"/>
@@ -42,14 +42,8 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="nickname" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="nS6-lh-a9u">
-                                        <rect key="frame" x="0.0" y="30" width="215" height="30"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="password" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lyc-to-wDu">
-                                        <rect key="frame" x="0.0" y="60" width="215" height="30"/>
+                                        <rect key="frame" x="0.0" y="30" width="215" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -64,7 +58,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1j4-dE-iSh">
-                                <rect key="frame" x="108.99999999999999" y="148" width="156.66666666666663" height="52"/>
+                                <rect key="frame" x="108.99999999999999" y="148" width="156.66666666666663" height="82"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
                                 <color key="textColor" red="0.97778476000000003" green="1" blue="0.97565874509999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -85,7 +79,7 @@
                             <constraint firstItem="Mmo-tq-rVG" firstAttribute="top" secondItem="nYW-is-opa" secondAttribute="bottom" constant="200" id="BLi-jG-c8P"/>
                             <constraint firstItem="Mmo-tq-rVG" firstAttribute="top" secondItem="uYy-z4-bj2" secondAttribute="bottom" constant="259" id="D0E-P2-OD2"/>
                             <constraint firstItem="nYW-is-opa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="DOi-kd-igR"/>
-                            <constraint firstItem="uYy-z4-bj2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="254" id="FQg-DH-tI7"/>
+                            <constraint firstItem="uYy-z4-bj2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="284" id="FQg-DH-tI7"/>
                             <constraint firstItem="Mmo-tq-rVG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="111" id="GxZ-eq-s9Q"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mmo-tq-rVG" secondAttribute="trailing" constant="111" id="ONp-qq-6Gc"/>
                             <constraint firstItem="JjV-hn-eXV" firstAttribute="top" secondItem="Mmo-tq-rVG" secondAttribute="bottom" constant="20" id="P6x-GQ-nuW"/>
@@ -108,7 +102,6 @@
                     </view>
                     <connections>
                         <outlet property="loginBTN" destination="nYW-is-opa" id="KLY-a1-994"/>
-                        <outlet property="nicknameTXF" destination="nS6-lh-a9u" id="Ls4-rC-ddr"/>
                         <outlet property="user1BTN" destination="Mmo-tq-rVG" id="nfM-JA-emv"/>
                         <outlet property="user2BTN" destination="JjV-hn-eXV" id="MhB-wW-2bY"/>
                         <outlet property="userMailTXF" destination="Xwn-yG-6g9" id="z9t-3J-SaT"/>
