@@ -43,6 +43,17 @@
 		3245736A20647A4700A5D146 /* TC_Serv_Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3245736920647A4700A5D146 /* TC_Serv_Chapter.swift */; };
 		3245736E2065035500A5D146 /* MainViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3245736D2065035500A5D146 /* MainViewViewController.swift */; };
 		32C1480E20713B7C00D49DAC /* mainViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C1480D20713B7C00D49DAC /* mainViewCollectionViewCell.swift */; };
+		32D9B452207944D6003F93AC /* TwitterShareExtensionUIResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 32D9B44E207944D6003F93AC /* TwitterShareExtensionUIResources.bundle */; };
+		32D9B453207944D6003F93AC /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 32D9B44F207944D6003F93AC /* TwitterKitResources.bundle */; };
+		32D9B454207944D6003F93AC /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D9B450207944D6003F93AC /* TwitterKit.framework */; };
+		32D9B455207944D6003F93AC /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D9B451207944D6003F93AC /* TwitterCore.framework */; };
+		32D9B45620794552003F93AC /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D9B450207944D6003F93AC /* TwitterKit.framework */; };
+		32D9B45720794552003F93AC /* TwitterKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32D9B450207944D6003F93AC /* TwitterKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		32D9B45A20794561003F93AC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D9B45920794561003F93AC /* AVFoundation.framework */; };
+		32D9B45C2079459B003F93AC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D9B45B2079459B003F93AC /* CoreMedia.framework */; };
+		32D9B45E207945F6003F93AC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D9B45D207945F5003F93AC /* CoreData.framework */; };
+		32D9B4602079463A003F93AC /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D9B45F20794639003F93AC /* Accounts.framework */; };
+		32D9B46220794791003F93AC /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D9B46120794791003F93AC /* Social.framework */; };
 		5F29D96C2060E18F0014EF61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F29D96B2060E18F0014EF61 /* AppDelegate.swift */; };
 		5F29D9712060E18F0014EF61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F29D96F2060E18F0014EF61 /* Main.storyboard */; };
 		5F29D9732060E18F0014EF61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F29D9722060E18F0014EF61 /* Assets.xcassets */; };
@@ -51,6 +62,20 @@
 		5FAC58152074B096006C407C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5FAC58132074B096006C407C /* Localizable.strings */; };
 		5FEED7B720622EE700CB270D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FEED7B620622EE600CB270D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		32D9B45820794552003F93AC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				32D9B45720794552003F93AC /* TwitterKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		32118E522066AED600983E60 /* MainUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUserViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +119,15 @@
 		3245736920647A4700A5D146 /* TC_Serv_Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TC_Serv_Chapter.swift; sourceTree = "<group>"; };
 		3245736D2065035500A5D146 /* MainViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewController.swift; sourceTree = "<group>"; };
 		32C1480D20713B7C00D49DAC /* mainViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewCollectionViewCell.swift; sourceTree = "<group>"; };
+		32D9B44E207944D6003F93AC /* TwitterShareExtensionUIResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterShareExtensionUIResources.bundle; sourceTree = "<group>"; };
+		32D9B44F207944D6003F93AC /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterKitResources.bundle; sourceTree = "<group>"; };
+		32D9B450207944D6003F93AC /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		32D9B451207944D6003F93AC /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		32D9B45920794561003F93AC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		32D9B45B2079459B003F93AC /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		32D9B45D207945F5003F93AC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		32D9B45F20794639003F93AC /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		32D9B46120794791003F93AC /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		5F29D9682060E18F0014EF61 /* Turncast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Turncast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F29D96B2060E18F0014EF61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F29D9702060E18F0014EF61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -118,6 +152,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32D9B46220794791003F93AC /* Social.framework in Frameworks */,
+				32D9B4602079463A003F93AC /* Accounts.framework in Frameworks */,
+				32D9B45E207945F6003F93AC /* CoreData.framework in Frameworks */,
+				32D9B45C2079459B003F93AC /* CoreMedia.framework in Frameworks */,
+				32D9B45A20794561003F93AC /* AVFoundation.framework in Frameworks */,
 				324573522064145600A5D146 /* FirebaseFirestore.framework in Frameworks */,
 				324573532064146600A5D146 /* Protobuf.framework in Frameworks */,
 				324573542064146600A5D146 /* gRPC-Core.framework in Frameworks */,
@@ -128,6 +167,8 @@
 				3245735A2064147C00A5D146 /* FirebaseCore.framework in Frameworks */,
 				3245735B2064147C00A5D146 /* FirebaseAnalytics.framework in Frameworks */,
 				3245735C2064147C00A5D146 /* GoogleToolboxForMac.framework in Frameworks */,
+				32D9B455207944D6003F93AC /* TwitterCore.framework in Frameworks */,
+				32D9B45620794552003F93AC /* TwitterKit.framework in Frameworks */,
 				3245735D2064147C00A5D146 /* nanopb.framework in Frameworks */,
 				3245735E2064147C00A5D146 /* FirebaseNanoPB.framework in Frameworks */,
 				3245735F2064147C00A5D146 /* FirebaseInstanceID.framework in Frameworks */,
@@ -135,6 +176,7 @@
 				324573572064146600A5D146 /* gRPC-ProtoRPC.framework in Frameworks */,
 				324573582064146600A5D146 /* BoringSSL.framework in Frameworks */,
 				324573592064146600A5D146 /* gRPC-RxLibrary.framework in Frameworks */,
+				32D9B454207944D6003F93AC /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +297,7 @@
 		32438BB42063A77000BFF0F7 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				32D9B44D207944D6003F93AC /* Twitter-Kit-iOS */,
 				32438B6D2062B0F600BFF0F7 /* Firebase */,
 			);
 			path = Libraries;
@@ -289,6 +332,17 @@
 				32C1480D20713B7C00D49DAC /* mainViewCollectionViewCell.swift */,
 			);
 			path = mainView;
+			sourceTree = "<group>";
+		};
+		32D9B44D207944D6003F93AC /* Twitter-Kit-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				32D9B44E207944D6003F93AC /* TwitterShareExtensionUIResources.bundle */,
+				32D9B44F207944D6003F93AC /* TwitterKitResources.bundle */,
+				32D9B450207944D6003F93AC /* TwitterKit.framework */,
+				32D9B451207944D6003F93AC /* TwitterCore.framework */,
+			);
+			path = "Twitter-Kit-iOS";
 			sourceTree = "<group>";
 		};
 		5F29D95F2060E18F0014EF61 = {
@@ -341,6 +395,11 @@
 		5FEED7B82062312D00CB270D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				32D9B46120794791003F93AC /* Social.framework */,
+				32D9B45F20794639003F93AC /* Accounts.framework */,
+				32D9B45D207945F5003F93AC /* CoreData.framework */,
+				32D9B45B2079459B003F93AC /* CoreMedia.framework */,
+				32D9B45920794561003F93AC /* AVFoundation.framework */,
 				5FEED7EB20623A0400CB270D /* GoogleSignIn.framework */,
 				5FEED7EC20623A0400CB270D /* GoogleSignInDependencies.framework */,
 				5FEED7DD2062344300CB270D /* SystemConfiguration.framework */,
@@ -359,6 +418,7 @@
 				5F29D9642060E18F0014EF61 /* Sources */,
 				5F29D9652060E18F0014EF61 /* Frameworks */,
 				5F29D9662060E18F0014EF61 /* Resources */,
+				32D9B45820794552003F93AC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -413,9 +473,11 @@
 				32438B932062B18E00BFF0F7 /* gRPCCertificates.bundle in Resources */,
 				32118E552066AED600983E60 /* MainUserViewController.xib in Resources */,
 				5F29D9762060E18F0014EF61 /* LaunchScreen.storyboard in Resources */,
+				32D9B452207944D6003F93AC /* TwitterShareExtensionUIResources.bundle in Resources */,
 				5FAC58152074B096006C407C /* Localizable.strings in Resources */,
 				5FEED7B720622EE700CB270D /* GoogleService-Info.plist in Resources */,
 				5F29D9732060E18F0014EF61 /* Assets.xcassets in Resources */,
+				32D9B453207944D6003F93AC /* TwitterKitResources.bundle in Resources */,
 				5F29D9712060E18F0014EF61 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -614,6 +676,7 @@
 					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Database",
 					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Firestore",
 					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Analytics",
+					"$(PROJECT_DIR)/Turncast/Libraries/Twitter-Kit-iOS",
 				);
 				INFOPLIST_FILE = Turncast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -642,6 +705,7 @@
 					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Database",
 					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Firestore",
 					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Analytics",
+					"$(PROJECT_DIR)/Turncast/Libraries/Twitter-Kit-iOS",
 				);
 				INFOPLIST_FILE = Turncast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
