@@ -33,21 +33,6 @@ class TC_Serv_Auth {
                 completionHandler(error.localizedDescription, nil)
             }
             if user?.uid != nil {
-                //realizamos login al user
-//                Auth.auth().signIn(withEmail: email, password: psswd, completion: { (user, error) in
-//                    if let error = (error as NSError?){
-//                        completionHandler(error.localizedDescription, nil)
-//                    } else {
-//
-//                        //se ha creado el user y se ha logueado, creamos el profile
-//                        TC_Serv_User().createUser(user?.uid, completionHandler: { (error, bool) in
-//                            if error != nil {
-//                                print(error as Any)
-//                            }
-//                        })
-//                        completionHandler(nil, user)
-//                    }
-//                })
                 //se ha creado el user así que lo introducimos en la DB
                 self.createProfile(user!)
                 self.loginUser(email, psswd, completionHandler: { (error, user) in

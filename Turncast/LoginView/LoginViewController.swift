@@ -81,9 +81,11 @@ class LoginViewController: UIViewController {
     }
     
     
+    // MARK: -
+    // MARK: Modal Elements
+    // MARK: -
     
-    
-    
+    // MARK: Modal functions
     func animatePopUp(){
         blur.isHidden = false
         blur.alpha = 0
@@ -109,6 +111,45 @@ class LoginViewController: UIViewController {
             self.newUserPopUp.removeFromSuperview()
         }
     }
+    
+    
+    // MARK: -
+    
+    // MARK: Modal Outlets
+    @IBOutlet weak var txModalEmail: UITextField!
+    @IBOutlet weak var txModalRepeatEmail: UITextField!
+    @IBOutlet weak var txModalPass: UITextField!
+    @IBOutlet weak var txModalRepeatPass: UITextField!
+    
+    //MARK: -
+    
+    // MARK: Modal Actions
+    @IBAction func btModalCreateClick(_ sender: Any) {
+        if(!isValidEmail(test: txModalEmail.text!)){return}
+        if(!isValidEmail(test: txModalRepeatEmail.text!)){return}
+        if(txModalEmail.text != txModalRepeatEmail.text){return}
+        
+        if((txModalPass.text?.count)!<6){return}
+        if((txModalRepeatPass.text?.count)!<6){return}
+        if(txModalPass.text != txModalRepeatPass.text){return}
+        
+        TC_Serv_Auth().createUser(txModalEmail.text, txModalPass.text) { (error, user) in
+            
+            if error != nil { print("Usuario creado!!!")}
+            else
+            { print("Error al crear el usuarios")}
+        }
+        
+    }
+    
+    
+    
+   
+    @IBAction func btModalCancelClick(_ sender: Any) {
+        
+        
+    }
+    
     
     
     
