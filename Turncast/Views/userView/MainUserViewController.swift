@@ -34,7 +34,7 @@ class MainUserViewController: UIViewController {
         userImage.layer.cornerRadius = userImage.frame.size.width / 2
         userImage.clipsToBounds = true
         userImage.layer.borderWidth = 3.0
-        userImage.layer.borderColor = (UIColor.cyan as! CGColor)
+//        userImage.layer.borderColor = (UIColor.cyan as! CGColor)
         
     }
     

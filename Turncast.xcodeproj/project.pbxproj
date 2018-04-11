@@ -52,6 +52,8 @@
 		32D9B47B207B39CF003F93AC /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 32D9B477207B39CF003F93AC /* TwitterKitResources.bundle */; };
 		32D9B47C207B39CF003F93AC /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D9B478207B39CF003F93AC /* TwitterKit.framework */; };
 		32D9B47D207B39CF003F93AC /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D9B479207B39CF003F93AC /* TwitterCore.framework */; };
+		32D9B4A8207E0CC0003F93AC /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D9B4A6207E0CC0003F93AC /* NewsViewController.swift */; };
+		32D9B4A9207E0CC0003F93AC /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32D9B4A7207E0CC0003F93AC /* NewsViewController.xib */; };
 		5F29D96C2060E18F0014EF61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F29D96B2060E18F0014EF61 /* AppDelegate.swift */; };
 		5F29D9712060E18F0014EF61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F29D96F2060E18F0014EF61 /* Main.storyboard */; };
 		5F29D9732060E18F0014EF61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F29D9722060E18F0014EF61 /* Assets.xcassets */; };
@@ -125,6 +127,8 @@
 		32D9B477207B39CF003F93AC /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterKitResources.bundle; sourceTree = "<group>"; };
 		32D9B478207B39CF003F93AC /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		32D9B479207B39CF003F93AC /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		32D9B4A6207E0CC0003F93AC /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		32D9B4A7207E0CC0003F93AC /* NewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
 		5F29D9682060E18F0014EF61 /* Turncast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Turncast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F29D96B2060E18F0014EF61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F29D9702060E18F0014EF61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -314,6 +318,7 @@
 		3245736B2065032F00A5D146 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				32D9B4A5207E0CA5003F93AC /* News */,
 				32118E512066AEB900983E60 /* userView */,
 				3245736C2065033900A5D146 /* mainView */,
 				32118E5A206CEBA200983E60 /* MainTabViewController.swift */,
@@ -339,6 +344,15 @@
 				32D9B479207B39CF003F93AC /* TwitterCore.framework */,
 			);
 			path = "Twitter-Kit";
+			sourceTree = "<group>";
+		};
+		32D9B4A5207E0CA5003F93AC /* News */ = {
+			isa = PBXGroup;
+			children = (
+				32D9B4A6207E0CC0003F93AC /* NewsViewController.swift */,
+				32D9B4A7207E0CC0003F93AC /* NewsViewController.xib */,
+			);
+			path = News;
 			sourceTree = "<group>";
 		};
 		5F29D95F2060E18F0014EF61 = {
@@ -473,6 +487,7 @@
 				5FAC58152074B096006C407C /* Localizable.strings in Resources */,
 				5FEED7B720622EE700CB270D /* GoogleService-Info.plist in Resources */,
 				5F29D9732060E18F0014EF61 /* Assets.xcassets in Resources */,
+				32D9B4A9207E0CC0003F93AC /* NewsViewController.xib in Resources */,
 				32D9B47B207B39CF003F93AC /* TwitterKitResources.bundle in Resources */,
 				5F29D9712060E18F0014EF61 /* Main.storyboard in Resources */,
 			);
@@ -488,6 +503,7 @@
 				5FAC5810207496D3006C407C /* CustomControls.swift in Sources */,
 				32118E5B206CEBA200983E60 /* MainTabViewController.swift in Sources */,
 				32118E542066AED600983E60 /* MainUserViewController.swift in Sources */,
+				32D9B4A8207E0CC0003F93AC /* NewsViewController.swift in Sources */,
 				3245736A20647A4700A5D146 /* TC_Serv_Chapter.swift in Sources */,
 				3245736E2065035500A5D146 /* MainViewViewController.swift in Sources */,
 				32118E572067CF3200983E60 /* ChatRoom.swift in Sources */,

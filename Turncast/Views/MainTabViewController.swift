@@ -23,6 +23,13 @@ class MainTabViewController: UITabBarController {
         // Do any additional setup after loading the view.
     }
 
-
+    override func viewWillAppear(_ animated: Bool) {
+        let newsVC = NewsViewController()
+        newsVC.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 0)
+        
+        let mainUserVC = MainUserViewController()
+        mainUserVC.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 1)
+        self.viewControllers = [newsVC, mainUserVC]
+    }
 
 }
