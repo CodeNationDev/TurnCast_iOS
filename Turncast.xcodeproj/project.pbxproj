@@ -672,8 +672,6 @@
 					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Database",
 					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Firestore",
 					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Analytics",
-					"$(PROJECT_DIR)/Turncast/Libraries/Twitter-Kit-iOS",
-					"$(PROJECT_DIR)/Turncast/Libraries/Twitter-KitiOS",
 					"$(PROJECT_DIR)/Turncast/Libraries/Twitter-Kit",
 				);
 				INFOPLIST_FILE = Turncast/Info.plist;
@@ -703,8 +701,6 @@
 					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Database",
 					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Firestore",
 					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Analytics",
-					"$(PROJECT_DIR)/Turncast/Libraries/Twitter-Kit-iOS",
-					"$(PROJECT_DIR)/Turncast/Libraries/Twitter-KitiOS",
 					"$(PROJECT_DIR)/Turncast/Libraries/Twitter-Kit",
 				);
 				INFOPLIST_FILE = Turncast/Info.plist;
