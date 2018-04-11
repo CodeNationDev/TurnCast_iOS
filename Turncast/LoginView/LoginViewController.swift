@@ -135,23 +135,16 @@ class LoginViewController: UIViewController {
         
         TC_Serv_Auth().createUser(txModalEmail.text, txModalPass.text) { (error, user) in
             
-            if error != nil { print("Usuario creado!!!")}
+            if error != nil { print("Usuario creado!!!")
+              let alert = TC_errorAlertView("¡Usuario creado!")
+                self.present(alert, animated: true, completion: nil)
+                self.animateOutPopUp()
+                self.performSegue(withIdentifier: "showMain", sender: nil)
+            }
             else
-            { print("Error al crear el usuarios")}
+            { print(error as Any)}
         }
         
     }
-    
-    
-    
-   
-    @IBAction func btModalCancelClick(_ sender: Any) {
-        
-        
-    }
-    
-    
-    
-    
     
 }

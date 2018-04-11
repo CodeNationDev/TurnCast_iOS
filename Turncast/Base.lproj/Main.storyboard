@@ -145,7 +145,6 @@
                     </view>
                     <connections>
                         <outlet property="blur" destination="VVR-56-oDc" id="pjc-yz-iHB"/>
-                        <outlet property="btModalCancelClick" destination="1aL-II-wIe" id="inX-EC-Oow"/>
                         <outlet property="loginBTN" destination="nYW-is-opa" id="KLY-a1-994"/>
                         <outlet property="newUserPopUp" destination="3m5-ET-ySw" id="nKU-tM-qYX"/>
                         <outlet property="txModalEmail" destination="ZxB-Oj-re2" id="e2d-Ia-vfr"/>
@@ -215,7 +214,6 @@
                                 <color key="titleColor" red="0.96329864033467993" green="1" blue="0.975307710720973" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
                             <connections>
-                                <action selector="btModalCancelClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FmN-es-Weq"/>
                                 <action selector="cancelNewUserPopUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DOL-am-Cm4"/>
                             </connections>
                         </button>
