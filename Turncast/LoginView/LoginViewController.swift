@@ -144,14 +144,16 @@ class LoginViewController: UIViewController {
         
     }
     
+    
+    /// Comprueba los valores insertados en el PopUp de creación de usuario
+    ///
+    /// - Returns: false o true (esa es la cuestón)
     private func comprobeCreateUser() -> Bool {
         if(!isValidEmail(test: txModalEmail.text!)){
             present(TC_errorAlertView("inserta un email válido"), animated: true, completion: nil)
             return false
             
         }
-        //        if(!isValidEmail(test: txModalRepeatEmail.text!)){return}
-        //        en realidad puedes comprobar q sea el mismo y ya está
         if(txModalEmail.text != txModalRepeatEmail.text){
             present(TC_errorAlertView("Introduce el mismo mail"), animated: true, completion: nil)
             txModalRepeatEmail.text = ""
@@ -162,7 +164,6 @@ class LoginViewController: UIViewController {
             present(TC_errorAlertView("Mínimo 6 caracteres para la contraseña"), animated: true, completion: nil)
             return false
         }
-        //        if((txModalRepeatPass.text?.count)!<6){return}
         if(txModalPass.text != txModalRepeatPass.text){
             present(TC_errorAlertView("Introduce la misma contraseña"), animated: true, completion: nil)
             txModalRepeatPass.text = ""
