@@ -125,17 +125,14 @@ class LoginViewController: UIViewController {
     
     // MARK: Modal Actions
     @IBAction func btModalCreateClick(_ sender: Any) {
-        if(!isValidEmail(test: txModalEmail.text!)){return}
-        if(!isValidEmail(test: txModalRepeatEmail.text!)){return}
-        if(txModalEmail.text != txModalRepeatEmail.text){return}
         
-        if((txModalPass.text?.count)!<6){return}
-        if((txModalRepeatPass.text?.count)!<6){return}
-        if(txModalPass.text != txModalRepeatPass.text){return}
+        if !comprobeCreateUser() { return }
         
         TC_Serv_Auth().createUser(txModalEmail.text, txModalPass.text) { (error, user) in
             
-            if error != nil { print("Usuario creado!!!")
+            
+            
+            if error == nil { print("Usuario creado!!!")
               let alert = TC_errorAlertView("¡Usuario creado!")
                 self.present(alert, animated: true, completion: nil)
                 self.animateOutPopUp()
@@ -145,6 +142,33 @@ class LoginViewController: UIViewController {
             { print(error as Any)}
         }
         
+    }
+    
+    private func comprobeCreateUser() -> Bool {
+        if(!isValidEmail(test: txModalEmail.text!)){
+            present(TC_errorAlertView("inserta un email válido"), animated: true, completion: nil)
+            return false
+            
+        }
+        //        if(!isValidEmail(test: txModalRepeatEmail.text!)){return}
+        //        en realidad puedes comprobar q sea el mismo y ya está
+        if(txModalEmail.text != txModalRepeatEmail.text){
+            present(TC_errorAlertView("Introduce el mismo mail"), animated: true, completion: nil)
+            txModalRepeatEmail.text = ""
+            return false
+        }
+        
+        if((txModalPass.text?.count)!<6){
+            present(TC_errorAlertView("Mínimo 6 caracteres para la contraseña"), animated: true, completion: nil)
+            return false
+        }
+        //        if((txModalRepeatPass.text?.count)!<6){return}
+        if(txModalPass.text != txModalRepeatPass.text){
+            present(TC_errorAlertView("Introduce la misma contraseña"), animated: true, completion: nil)
+            txModalRepeatPass.text = ""
+            return false
+        }
+        return true
     }
     
 }
