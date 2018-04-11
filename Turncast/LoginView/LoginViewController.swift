@@ -28,6 +28,15 @@ class LoginViewController: UIViewController {
         
 
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        if Auth.auth().currentUser != nil {
+            self.performSegue(withIdentifier: "showMain", sender: nil)
+        }
+    }
+    
+    
 
     
     @IBAction func loginButton(_ sender: Any) {
