@@ -40,6 +40,20 @@ class MainUserViewController: UIViewController {
     
     
     
+    @IBAction func logOut(_ sender: Any) {
+       
+        
+        do {
+            try  Auth.auth().signOut()
+            print("hecho el logout")
+             self.dismiss(animated: true, completion: nil)
+        } catch  {
+            print("error intentado hacer logout")
+            present(TC_errorAlertView("Ha ocurrido un error inesperado..."), animated: true, completion: nil)
+        }
+        
+        
+    }
     
     
     
