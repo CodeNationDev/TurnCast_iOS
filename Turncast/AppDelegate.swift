@@ -10,6 +10,7 @@ import UIKit
 import FirebaseCore
 import FirebaseAuth
 import TwitterKit
+import GoogleSignIn
 
 
 
@@ -25,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         TWTRTwitter.sharedInstance().start(withConsumerKey:"hTpkPVU4pThkM0", consumerSecret:"ovEqziMzLpUOF163Qg2mj")
+        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
 
         
         return true
@@ -55,5 +57,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+//MARK: Google SignIN
+extension AppDelegate {
+    
+    func application(_ application: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any])
+        -> Bool {
+            return GIDSignIn.sharedInstance().handle(url, sourceApplication:options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String, annotation: [:])
+    }
 }
 

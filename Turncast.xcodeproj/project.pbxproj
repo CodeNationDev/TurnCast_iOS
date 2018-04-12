@@ -12,6 +12,13 @@
 		32118E572067CF3200983E60 /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32118E562067CF3200983E60 /* ChatRoom.swift */; };
 		32118E592067CFF000983E60 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32118E582067CFF000983E60 /* Message.swift */; };
 		32118E5B206CEBA200983E60 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32118E5A206CEBA200983E60 /* MainTabViewController.swift */; };
+		3237D1A1208019F000B4C315 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B722062B18E00BFF0F7 /* nanopb.framework */; };
+		3237D1A620801A5000B4C315 /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3237D1A420801A5000B4C315 /* FirebaseMessaging.framework */; };
+		3237D1A720801A8B00B4C315 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B6F2062B18E00BFF0F7 /* FirebaseCore.framework */; };
+		3237D1A820801D8800B4C315 /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B872062B18E00BFF0F7 /* FirebaseDatabase.framework */; };
+		3237D1BB20801E0500B4C315 /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3237D1B820801E0500B4C315 /* GoogleSignIn.bundle */; };
+		3237D1BC20801E0500B4C315 /* GoogleSignInDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3237D1B920801E0500B4C315 /* GoogleSignInDependencies.framework */; };
+		3237D1BD20801E0500B4C315 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3237D1BA20801E0500B4C315 /* GoogleSignIn.framework */; };
 		32438B932062B18E00BFF0F7 /* gRPCCertificates.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 32438B7B2062B18E00BFF0F7 /* gRPCCertificates.bundle */; };
 		32438BA92062B45F00BFF0F7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32438BA82062B45F00BFF0F7 /* LoginViewController.swift */; };
 		32438BAC2062B50F00BFF0F7 /* TC_Serv_Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32438BAB2062B50F00BFF0F7 /* TC_Serv_Auth.swift */; };
@@ -28,15 +35,7 @@
 		324573572064146600A5D146 /* gRPC-ProtoRPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B7E2062B18E00BFF0F7 /* gRPC-ProtoRPC.framework */; };
 		324573582064146600A5D146 /* BoringSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B7F2062B18E00BFF0F7 /* BoringSSL.framework */; };
 		324573592064146600A5D146 /* gRPC-RxLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B802062B18E00BFF0F7 /* gRPC-RxLibrary.framework */; };
-		3245735A2064147C00A5D146 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B6F2062B18E00BFF0F7 /* FirebaseCore.framework */; };
-		3245735B2064147C00A5D146 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B702062B18E00BFF0F7 /* FirebaseAnalytics.framework */; };
-		3245735C2064147C00A5D146 /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B712062B18E00BFF0F7 /* GoogleToolboxForMac.framework */; };
-		3245735D2064147C00A5D146 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B722062B18E00BFF0F7 /* nanopb.framework */; };
-		3245735E2064147C00A5D146 /* FirebaseNanoPB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B732062B18E00BFF0F7 /* FirebaseNanoPB.framework */; };
-		3245735F2064147C00A5D146 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B742062B18E00BFF0F7 /* FirebaseInstanceID.framework */; };
-		324573602064147C00A5D146 /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B752062B18E00BFF0F7 /* FirebaseCoreDiagnostics.framework */; };
 		324573612064148800A5D146 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B832062B18E00BFF0F7 /* FirebaseAuth.framework */; };
-		324573622064148A00A5D146 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32438B822062B18E00BFF0F7 /* GTMSessionFetcher.framework */; };
 		32457364206479DC00A5D146 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32457363206479DC00A5D146 /* Chapter.swift */; };
 		3245736620647A0500A5D146 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3245736520647A0500A5D146 /* Channel.swift */; };
 		3245736820647A3100A5D146 /* TC_Serv_Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3245736720647A3100A5D146 /* TC_Serv_Channel.swift */; };
@@ -64,25 +63,17 @@
 		5FEED7B720622EE700CB270D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FEED7B620622EE600CB270D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		32D9B45820794552003F93AC /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		32118E522066AED600983E60 /* MainUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUserViewController.swift; sourceTree = "<group>"; };
 		32118E532066AED600983E60 /* MainUserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainUserViewController.xib; sourceTree = "<group>"; };
 		32118E562067CF3200983E60 /* ChatRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
 		32118E582067CFF000983E60 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		32118E5A206CEBA200983E60 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
+		3237D1A320801A5000B4C315 /* Protobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Protobuf.framework; sourceTree = "<group>"; };
+		3237D1A420801A5000B4C315 /* FirebaseMessaging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseMessaging.framework; sourceTree = "<group>"; };
+		3237D1B820801E0500B4C315 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleSignIn.bundle; sourceTree = "<group>"; };
+		3237D1B920801E0500B4C315 /* GoogleSignInDependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignInDependencies.framework; sourceTree = "<group>"; };
+		3237D1BA20801E0500B4C315 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignIn.framework; sourceTree = "<group>"; };
 		32438B6F2062B18E00BFF0F7 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
 		32438B702062B18E00BFF0F7 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
 		32438B712062B18E00BFF0F7 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleToolboxForMac.framework; sourceTree = "<group>"; };
@@ -159,23 +150,21 @@
 				32D9B47C207B39CF003F93AC /* TwitterKit.framework in Frameworks */,
 				32D9B4602079463A003F93AC /* Accounts.framework in Frameworks */,
 				32D9B45E207945F6003F93AC /* CoreData.framework in Frameworks */,
+				3237D1BC20801E0500B4C315 /* GoogleSignInDependencies.framework in Frameworks */,
+				3237D1BD20801E0500B4C315 /* GoogleSignIn.framework in Frameworks */,
 				32D9B45C2079459B003F93AC /* CoreMedia.framework in Frameworks */,
 				32D9B45A20794561003F93AC /* AVFoundation.framework in Frameworks */,
+				3237D1A620801A5000B4C315 /* FirebaseMessaging.framework in Frameworks */,
 				324573522064145600A5D146 /* FirebaseFirestore.framework in Frameworks */,
+				3237D1A720801A8B00B4C315 /* FirebaseCore.framework in Frameworks */,
+				3237D1A820801D8800B4C315 /* FirebaseDatabase.framework in Frameworks */,
+				3237D1A1208019F000B4C315 /* nanopb.framework in Frameworks */,
 				324573532064146600A5D146 /* Protobuf.framework in Frameworks */,
 				324573542064146600A5D146 /* gRPC-Core.framework in Frameworks */,
 				324573612064148800A5D146 /* FirebaseAuth.framework in Frameworks */,
-				324573622064148A00A5D146 /* GTMSessionFetcher.framework in Frameworks */,
 				324573552064146600A5D146 /* leveldb-library.framework in Frameworks */,
 				324573562064146600A5D146 /* gRPC.framework in Frameworks */,
 				32D9B47D207B39CF003F93AC /* TwitterCore.framework in Frameworks */,
-				3245735A2064147C00A5D146 /* FirebaseCore.framework in Frameworks */,
-				3245735B2064147C00A5D146 /* FirebaseAnalytics.framework in Frameworks */,
-				3245735C2064147C00A5D146 /* GoogleToolboxForMac.framework in Frameworks */,
-				3245735D2064147C00A5D146 /* nanopb.framework in Frameworks */,
-				3245735E2064147C00A5D146 /* FirebaseNanoPB.framework in Frameworks */,
-				3245735F2064147C00A5D146 /* FirebaseInstanceID.framework in Frameworks */,
-				324573602064147C00A5D146 /* FirebaseCoreDiagnostics.framework in Frameworks */,
 				324573572064146600A5D146 /* gRPC-ProtoRPC.framework in Frameworks */,
 				324573582064146600A5D146 /* BoringSSL.framework in Frameworks */,
 				324573592064146600A5D146 /* gRPC-RxLibrary.framework in Frameworks */,
@@ -194,9 +183,29 @@
 			path = userView;
 			sourceTree = "<group>";
 		};
+		3237D1A220801A5000B4C315 /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				3237D1A320801A5000B4C315 /* Protobuf.framework */,
+				3237D1A420801A5000B4C315 /* FirebaseMessaging.framework */,
+			);
+			path = Messaging;
+			sourceTree = "<group>";
+		};
+		3237D1B720801E0500B4C315 /* GoogleSignin */ = {
+			isa = PBXGroup;
+			children = (
+				3237D1B820801E0500B4C315 /* GoogleSignIn.bundle */,
+				3237D1B920801E0500B4C315 /* GoogleSignInDependencies.framework */,
+				3237D1BA20801E0500B4C315 /* GoogleSignIn.framework */,
+			);
+			path = GoogleSignin;
+			sourceTree = "<group>";
+		};
 		32438B6D2062B0F600BFF0F7 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				3237D1A220801A5000B4C315 /* Messaging */,
 				32438B6E2062B18E00BFF0F7 /* Analytics */,
 				32438B812062B18E00BFF0F7 /* Auth */,
 				32438B852062B18E00BFF0F7 /* Database */,
@@ -299,6 +308,7 @@
 		32438BB42063A77000BFF0F7 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				3237D1B720801E0500B4C315 /* GoogleSignin */,
 				32D9B475207B39CF003F93AC /* Twitter-Kit */,
 				32438B6D2062B0F600BFF0F7 /* Firebase */,
 			);
@@ -439,7 +449,6 @@
 				5F29D9642060E18F0014EF61 /* Sources */,
 				5F29D9652060E18F0014EF61 /* Frameworks */,
 				5F29D9662060E18F0014EF61 /* Resources */,
-				32D9B45820794552003F93AC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -495,6 +504,7 @@
 				32118E552066AED600983E60 /* MainUserViewController.xib in Resources */,
 				5FAC581A207F36D4006C407C /* MyRooms.xib in Resources */,
 				5F29D9762060E18F0014EF61 /* LaunchScreen.storyboard in Resources */,
+				3237D1BB20801E0500B4C315 /* GoogleSignIn.bundle in Resources */,
 				32D9B47A207B39CF003F93AC /* TwitterShareExtensionUIResources.bundle in Resources */,
 				5FAC58152074B096006C407C /* Localizable.strings in Resources */,
 				5FEED7B720622EE700CB270D /* GoogleService-Info.plist in Resources */,
@@ -701,6 +711,8 @@
 					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Firestore",
 					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Analytics",
 					"$(PROJECT_DIR)/Turncast/Libraries/Twitter-Kit",
+					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Messaging",
+					"$(PROJECT_DIR)/Turncast/Libraries/GoogleSignin",
 				);
 				INFOPLIST_FILE = Turncast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -730,6 +742,8 @@
 					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Firestore",
 					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Analytics",
 					"$(PROJECT_DIR)/Turncast/Libraries/Twitter-Kit",
+					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Messaging",
+					"$(PROJECT_DIR)/Turncast/Libraries/GoogleSignin",
 				);
 				INFOPLIST_FILE = Turncast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

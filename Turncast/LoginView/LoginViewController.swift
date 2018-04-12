@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import GoogleSignIn
 
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate  {
+
+    
 
     @IBOutlet weak var user1BTN: UIButton!
     @IBOutlet weak var user2BTN: UIButton!
@@ -25,6 +28,9 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        GIDSignIn.sharedInstance().delegate = self
+        GIDSignIn.sharedInstance().uiDelegate = self
         
 
     }
@@ -179,6 +185,37 @@ class LoginViewController: UIViewController {
             return false
         }
         return true
+    }
+    
+    
+    
+    
+    
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if let error = error {
+            print(error.localizedDescription)
+            present(TC_errorAlertView(error.localizedDescription), animated: true, completion: nil)
+            return
+        }
+        
+        guard let authentication = user.authentication else { return }
+        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken, accessToken: authentication.accessToken)
+        Auth.auth().signIn(with: credential) { (user, error) in
+            if let error = (error as NSError?){
+                print(error.localizedDescription)
+                self.present(TC_errorAlertView(error.localizedDescription), animated: true, completion: nil)
+                return
+            }
+        
+           
+            self.performSegue(withIdentifier: "showMain", sender: nil)
+        }
+    }
+    
+    @IBAction func googleButtonPressed(_ sender: Any) {
+        GIDSignIn.sharedInstance().signIn()
+        
     }
     
 }

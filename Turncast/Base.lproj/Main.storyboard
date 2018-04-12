@@ -110,6 +110,20 @@
                                 </view>
                                 <blurEffect style="light"/>
                             </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="943-Zo-Ndd">
+                                <rect key="frame" x="134" y="582" width="106" height="30"/>
+                                <color key="backgroundColor" red="0.32835257674011098" green="0.82539813946465235" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="drh-Xc-sRv"/>
+                                    <constraint firstAttribute="width" constant="106" id="eqe-uv-smp"/>
+                                </constraints>
+                                <state key="normal" title="Usuario Google">
+                                    <color key="titleColor" red="1" green="0.99062032414163748" blue="0.91768291304535887" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="googleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="53N-cU-1IJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.5339612632029459" green="1" blue="0.51707720432805349" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -131,9 +145,11 @@
                             <constraint firstItem="nYW-is-opa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="baR-eU-in0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JjV-hn-eXV" secondAttribute="bottom" constant="51" id="bfO-XT-2xg"/>
                             <constraint firstItem="nYW-is-opa" firstAttribute="top" secondItem="lyc-to-wDu" secondAttribute="bottom" constant="40" id="cQ9-S1-pvS"/>
+                            <constraint firstItem="Mmo-tq-rVG" firstAttribute="top" secondItem="943-Zo-Ndd" secondAttribute="bottom" constant="35" id="imC-mF-vro"/>
                             <constraint firstItem="Mmo-tq-rVG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lig-Ul-cTH"/>
                             <constraint firstItem="1j4-dE-iSh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="nh2-yR-RKy"/>
                             <constraint firstItem="JjV-hn-eXV" firstAttribute="top" secondItem="Mmo-tq-rVG" secondAttribute="bottom" constant="20" id="odF-Qe-EUo"/>
+                            <constraint firstItem="943-Zo-Ndd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="skx-cW-sxv"/>
                             <constraint firstItem="C5Y-KV-0RH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="z0t-Bz-AlZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -337,7 +353,7 @@
                     <viewLayoutGuide key="safeArea" id="eiw-zn-WTU"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="84" y="838"/>
+            <point key="canvasLocation" x="57" y="924"/>
         </scene>
         <!--Main Tab View Controller-->
         <scene sceneID="KrQ-Oj-qrG">
@@ -352,7 +368,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eUS-0X-Clw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="838" y="25"/>
+            <point key="canvasLocation" x="1454" y="24"/>
         </scene>
     </scenes>
     <resources>
