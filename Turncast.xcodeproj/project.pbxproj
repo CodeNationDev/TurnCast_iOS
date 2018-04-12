@@ -60,6 +60,7 @@
 		5F29D9762060E18F0014EF61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F29D9742060E18F0014EF61 /* LaunchScreen.storyboard */; };
 		5FAC5810207496D3006C407C /* CustomControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAC580F207496D3006C407C /* CustomControls.swift */; };
 		5FAC58152074B096006C407C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5FAC58132074B096006C407C /* Localizable.strings */; };
+		5FAC581A207F36D4006C407C /* MyRooms.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FAC5819207F36D4006C407C /* MyRooms.xib */; };
 		5FEED7B720622EE700CB270D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FEED7B620622EE600CB270D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -141,6 +142,7 @@
 		5FAC58142074B096006C407C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5FAC58162074B0A3006C407C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5FAC58172074B0A4006C407C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5FAC5819207F36D4006C407C /* MyRooms.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyRooms.xib; sourceTree = "<group>"; };
 		5FEED7B620622EE600CB270D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5FEED7DB2062343C00CB270D /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		5FEED7DD2062344300CB270D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -318,6 +320,7 @@
 		3245736B2065032F00A5D146 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5FAC5818207F334A006C407C /* MyRooms */,
 				32D9B4A5207E0CA5003F93AC /* News */,
 				32118E512066AEB900983E60 /* userView */,
 				3245736C2065033900A5D146 /* mainView */,
@@ -402,6 +405,14 @@
 			path = CustomControlModels;
 			sourceTree = "<group>";
 		};
+		5FAC5818207F334A006C407C /* MyRooms */ = {
+			isa = PBXGroup;
+			children = (
+				5FAC5819207F36D4006C407C /* MyRooms.xib */,
+			);
+			path = MyRooms;
+			sourceTree = "<group>";
+		};
 		5FEED7B82062312D00CB270D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -482,6 +493,7 @@
 			files = (
 				32438B932062B18E00BFF0F7 /* gRPCCertificates.bundle in Resources */,
 				32118E552066AED600983E60 /* MainUserViewController.xib in Resources */,
+				5FAC581A207F36D4006C407C /* MyRooms.xib in Resources */,
 				5F29D9762060E18F0014EF61 /* LaunchScreen.storyboard in Resources */,
 				32D9B47A207B39CF003F93AC /* TwitterShareExtensionUIResources.bundle in Resources */,
 				5FAC58152074B096006C407C /* Localizable.strings in Resources */,
