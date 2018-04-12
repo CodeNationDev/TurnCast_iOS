@@ -51,13 +51,21 @@ class LoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDeleg
         let usermail = userMailTXF.text
         let pass = userPassTXF.text
         
-        if(!isValidEmail(test: usermail!)){return}
-        if((pass?.count)!<6){return}
+        if(!isValidEmail(test: usermail!)){
+            present(TC_errorAlertView("Introduce un mail válido"), animated: true, completion: nil)
+            return
+        }
+        if((pass?.count)!<6){
+            present(TC_errorAlertView("Password: Mínimo 6 caracteres"), animated: true, completion: nil)
+            return
+        }
+        
         TC_Serv_Auth().loginUser(usermail, pass) { (error, user) in
             if error == nil {
                 self.performSegue(withIdentifier: "showMain", sender: nil)
             }
             else {
+                self.present(TC_errorAlertView(error! as String), animated: true, completion: nil)
                 print(error as Any)
             }
         }
