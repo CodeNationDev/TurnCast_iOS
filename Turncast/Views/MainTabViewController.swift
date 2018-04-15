@@ -25,11 +25,17 @@ class MainTabViewController: UITabBarController {
 
     override func viewWillAppear(_ animated: Bool) {
         let newsVC = NewsViewController()
-        newsVC.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 0)
+        newsVC.tabBarItem = UITabBarItem(title: "Noticias", image: nil, tag: 0)
+        
+        
+        let podcastListVC = PodcastListViewController()
+        podcastListVC.tabBarItem = UITabBarItem(title: "Podcasts", image: nil, tag: 1)
         
         let mainUserVC = MainUserViewController()
-        mainUserVC.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 1)
-        self.viewControllers = [newsVC, mainUserVC]
+        mainUserVC.tabBarItem = UITabBarItem(title: "Usuario", image: nil, tag: 2)
+        
+        
+        self.viewControllers = [newsVC, podcastListVC, mainUserVC]
     }
 
 }

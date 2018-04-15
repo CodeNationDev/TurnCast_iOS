@@ -19,6 +19,8 @@
 		3237D1BB20801E0500B4C315 /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3237D1B820801E0500B4C315 /* GoogleSignIn.bundle */; };
 		3237D1BC20801E0500B4C315 /* GoogleSignInDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3237D1B920801E0500B4C315 /* GoogleSignInDependencies.framework */; };
 		3237D1BD20801E0500B4C315 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3237D1BA20801E0500B4C315 /* GoogleSignIn.framework */; };
+		3237D1C120839E3400B4C315 /* PodcastListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3237D1BF20839E3400B4C315 /* PodcastListViewController.swift */; };
+		3237D1C220839E3400B4C315 /* PodcastListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3237D1C020839E3400B4C315 /* PodcastListViewController.xib */; };
 		32438B932062B18E00BFF0F7 /* gRPCCertificates.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 32438B7B2062B18E00BFF0F7 /* gRPCCertificates.bundle */; };
 		32438BA92062B45F00BFF0F7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32438BA82062B45F00BFF0F7 /* LoginViewController.swift */; };
 		32438BAC2062B50F00BFF0F7 /* TC_Serv_Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32438BAB2062B50F00BFF0F7 /* TC_Serv_Auth.swift */; };
@@ -74,6 +76,8 @@
 		3237D1B820801E0500B4C315 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleSignIn.bundle; sourceTree = "<group>"; };
 		3237D1B920801E0500B4C315 /* GoogleSignInDependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignInDependencies.framework; sourceTree = "<group>"; };
 		3237D1BA20801E0500B4C315 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignIn.framework; sourceTree = "<group>"; };
+		3237D1BF20839E3400B4C315 /* PodcastListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastListViewController.swift; sourceTree = "<group>"; };
+		3237D1C020839E3400B4C315 /* PodcastListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PodcastListViewController.xib; sourceTree = "<group>"; };
 		32438B6F2062B18E00BFF0F7 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
 		32438B702062B18E00BFF0F7 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
 		32438B712062B18E00BFF0F7 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleToolboxForMac.framework; sourceTree = "<group>"; };
@@ -200,6 +204,15 @@
 				3237D1BA20801E0500B4C315 /* GoogleSignIn.framework */,
 			);
 			path = GoogleSignin;
+			sourceTree = "<group>";
+		};
+		3237D1BE20839E0D00B4C315 /* podcasList */ = {
+			isa = PBXGroup;
+			children = (
+				3237D1BF20839E3400B4C315 /* PodcastListViewController.swift */,
+				3237D1C020839E3400B4C315 /* PodcastListViewController.xib */,
+			);
+			path = podcasList;
 			sourceTree = "<group>";
 		};
 		32438B6D2062B0F600BFF0F7 /* Firebase */ = {
@@ -330,6 +343,7 @@
 		3245736B2065032F00A5D146 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3237D1BE20839E0D00B4C315 /* podcasList */,
 				5FAC5818207F334A006C407C /* MyRooms */,
 				32D9B4A5207E0CA5003F93AC /* News */,
 				32118E512066AEB900983E60 /* userView */,
@@ -507,6 +521,7 @@
 				3237D1BB20801E0500B4C315 /* GoogleSignIn.bundle in Resources */,
 				32D9B47A207B39CF003F93AC /* TwitterShareExtensionUIResources.bundle in Resources */,
 				5FAC58152074B096006C407C /* Localizable.strings in Resources */,
+				3237D1C220839E3400B4C315 /* PodcastListViewController.xib in Resources */,
 				5FEED7B720622EE700CB270D /* GoogleService-Info.plist in Resources */,
 				5F29D9732060E18F0014EF61 /* Assets.xcassets in Resources */,
 				32D9B4A9207E0CC0003F93AC /* NewsViewController.xib in Resources */,
@@ -538,6 +553,7 @@
 				32457364206479DC00A5D146 /* Chapter.swift in Sources */,
 				324573472064139E00A5D146 /* TC_Serv_User.swift in Sources */,
 				32438BDF2064025000BFF0F7 /* UserTurnCast.swift in Sources */,
+				3237D1C120839E3400B4C315 /* PodcastListViewController.swift in Sources */,
 				5F29D96C2060E18F0014EF61 /* AppDelegate.swift in Sources */,
 				32118E592067CFF000983E60 /* Message.swift in Sources */,
 				32438BAF2062B55500BFF0F7 /* Typealias.swift in Sources */,
