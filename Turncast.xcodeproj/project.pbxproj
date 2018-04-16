@@ -47,6 +47,7 @@
 		3245736820647A3100A5D146 /* TC_Serv_Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3245736720647A3100A5D146 /* TC_Serv_Channel.swift */; };
 		3245736A20647A4700A5D146 /* TC_Serv_Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3245736920647A4700A5D146 /* TC_Serv_Chapter.swift */; };
 		3245736E2065035500A5D146 /* MainViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3245736D2065035500A5D146 /* MainViewViewController.swift */; };
+		32B79BAB2085698800A52B13 /* FirebaseStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B79BA72085691C00A52B13 /* FirebaseStorage.framework */; };
 		32C1480E20713B7C00D49DAC /* mainViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C1480D20713B7C00D49DAC /* mainViewCollectionViewCell.swift */; };
 		32D9B45A20794561003F93AC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D9B45920794561003F93AC /* AVFoundation.framework */; };
 		32D9B45C2079459B003F93AC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D9B45B2079459B003F93AC /* CoreMedia.framework */; };
@@ -121,6 +122,7 @@
 		3245736720647A3100A5D146 /* TC_Serv_Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TC_Serv_Channel.swift; sourceTree = "<group>"; };
 		3245736920647A4700A5D146 /* TC_Serv_Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TC_Serv_Chapter.swift; sourceTree = "<group>"; };
 		3245736D2065035500A5D146 /* MainViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewController.swift; sourceTree = "<group>"; };
+		32B79BA72085691C00A52B13 /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseStorage.framework; sourceTree = "<group>"; };
 		32C1480D20713B7C00D49DAC /* mainViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewCollectionViewCell.swift; sourceTree = "<group>"; };
 		32D9B45920794561003F93AC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		32D9B45B2079459B003F93AC /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -163,6 +165,7 @@
 				32D9B4602079463A003F93AC /* Accounts.framework in Frameworks */,
 				32D9B45E207945F6003F93AC /* CoreData.framework in Frameworks */,
 				3237D1BC20801E0500B4C315 /* GoogleSignInDependencies.framework in Frameworks */,
+				32B79BAB2085698800A52B13 /* FirebaseStorage.framework in Frameworks */,
 				3237D1BD20801E0500B4C315 /* GoogleSignIn.framework in Frameworks */,
 				32D9B45C2079459B003F93AC /* CoreMedia.framework in Frameworks */,
 				32D9B45A20794561003F93AC /* AVFoundation.framework in Frameworks */,
@@ -235,6 +238,7 @@
 		32438B6D2062B0F600BFF0F7 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				32B79BAA2085697200A52B13 /* Storage */,
 				3237D1A220801A5000B4C315 /* Messaging */,
 				32438B6E2062B18E00BFF0F7 /* Analytics */,
 				32438B812062B18E00BFF0F7 /* Auth */,
@@ -379,6 +383,14 @@
 				32C1480D20713B7C00D49DAC /* mainViewCollectionViewCell.swift */,
 			);
 			path = mainView;
+			sourceTree = "<group>";
+		};
+		32B79BAA2085697200A52B13 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				32B79BA72085691C00A52B13 /* FirebaseStorage.framework */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 		32D9B475207B39CF003F93AC /* Twitter-Kit */ = {
@@ -755,6 +767,7 @@
 					"$(PROJECT_DIR)/Turncast/Libraries/GoogleSignin",
 					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Storage",
 					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Firabase-Storage",
+					"$(PROJECT_DIR)/Turncast/Libraries/Firebase",
 				);
 				INFOPLIST_FILE = Turncast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -788,6 +801,7 @@
 					"$(PROJECT_DIR)/Turncast/Libraries/GoogleSignin",
 					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Storage",
 					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Firabase-Storage",
+					"$(PROJECT_DIR)/Turncast/Libraries/Firebase",
 				);
 				INFOPLIST_FILE = Turncast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
