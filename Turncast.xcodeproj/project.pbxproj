@@ -21,6 +21,8 @@
 		3237D1BD20801E0500B4C315 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3237D1BA20801E0500B4C315 /* GoogleSignIn.framework */; };
 		3237D1C120839E3400B4C315 /* PodcastListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3237D1BF20839E3400B4C315 /* PodcastListViewController.swift */; };
 		3237D1C220839E3400B4C315 /* PodcastListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3237D1C020839E3400B4C315 /* PodcastListViewController.xib */; };
+		3237D1D3208557FD00B4C315 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3237D1D2208557FD00B4C315 /* CoreDataStack.swift */; };
+		3237D1D62085581B00B4C315 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3237D1D42085581B00B4C315 /* Model.xcdatamodeld */; };
 		32438B932062B18E00BFF0F7 /* gRPCCertificates.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 32438B7B2062B18E00BFF0F7 /* gRPCCertificates.bundle */; };
 		32438BA92062B45F00BFF0F7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32438BA82062B45F00BFF0F7 /* LoginViewController.swift */; };
 		32438BAC2062B50F00BFF0F7 /* TC_Serv_Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32438BAB2062B50F00BFF0F7 /* TC_Serv_Auth.swift */; };
@@ -78,6 +80,8 @@
 		3237D1BA20801E0500B4C315 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignIn.framework; sourceTree = "<group>"; };
 		3237D1BF20839E3400B4C315 /* PodcastListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastListViewController.swift; sourceTree = "<group>"; };
 		3237D1C020839E3400B4C315 /* PodcastListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PodcastListViewController.xib; sourceTree = "<group>"; };
+		3237D1D2208557FD00B4C315 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		3237D1D52085581B00B4C315 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		32438B6F2062B18E00BFF0F7 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
 		32438B702062B18E00BFF0F7 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
 		32438B712062B18E00BFF0F7 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleToolboxForMac.framework; sourceTree = "<group>"; };
@@ -213,6 +217,15 @@
 				3237D1C020839E3400B4C315 /* PodcastListViewController.xib */,
 			);
 			path = podcasList;
+			sourceTree = "<group>";
+		};
+		3237D1D1208557DE00B4C315 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				3237D1D2208557FD00B4C315 /* CoreDataStack.swift */,
+				3237D1D42085581B00B4C315 /* Model.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		32438B6D2062B0F600BFF0F7 /* Firebase */ = {
@@ -402,6 +415,7 @@
 		5F29D96A2060E18F0014EF61 /* Turncast */ = {
 			isa = PBXGroup;
 			children = (
+				3237D1D1208557DE00B4C315 /* CoreData */,
 				5FAC580E2074969A006C407C /* CustomControlModels */,
 				3245736B2065032F00A5D146 /* Views */,
 				32438BDD2064023200BFF0F7 /* Entities */,
@@ -538,6 +552,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FAC5810207496D3006C407C /* CustomControls.swift in Sources */,
+				3237D1D62085581B00B4C315 /* Model.xcdatamodeld in Sources */,
 				32118E5B206CEBA200983E60 /* MainTabViewController.swift in Sources */,
 				32118E542066AED600983E60 /* MainUserViewController.swift in Sources */,
 				32D9B4A8207E0CC0003F93AC /* NewsViewController.swift in Sources */,
@@ -554,6 +569,7 @@
 				324573472064139E00A5D146 /* TC_Serv_User.swift in Sources */,
 				32438BDF2064025000BFF0F7 /* UserTurnCast.swift in Sources */,
 				3237D1C120839E3400B4C315 /* PodcastListViewController.swift in Sources */,
+				3237D1D3208557FD00B4C315 /* CoreDataStack.swift in Sources */,
 				5F29D96C2060E18F0014EF61 /* AppDelegate.swift in Sources */,
 				32118E592067CFF000983E60 /* Message.swift in Sources */,
 				32438BAF2062B55500BFF0F7 /* Typealias.swift in Sources */,
@@ -795,6 +811,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3237D1D42085581B00B4C315 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3237D1D52085581B00B4C315 /* Model.xcdatamodel */,
+			);
+			currentVersion = 3237D1D52085581B00B4C315 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5F29D9602060E18F0014EF61 /* Project object */;
 }
