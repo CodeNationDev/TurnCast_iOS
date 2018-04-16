@@ -23,6 +23,8 @@
 		3237D1C220839E3400B4C315 /* PodcastListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3237D1C020839E3400B4C315 /* PodcastListViewController.xib */; };
 		3237D1D3208557FD00B4C315 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3237D1D2208557FD00B4C315 /* CoreDataStack.swift */; };
 		3237D1D62085581B00B4C315 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3237D1D42085581B00B4C315 /* Model.xcdatamodeld */; };
+		3237D1D8208558E500B4C315 /* TC_Serv_Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3237D1D7208558E500B4C315 /* TC_Serv_Cache.swift */; };
+		3237D1DA20855BA600B4C315 /* TC_Serv_Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3237D1D920855BA600B4C315 /* TC_Serv_Storage.swift */; };
 		32438B932062B18E00BFF0F7 /* gRPCCertificates.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 32438B7B2062B18E00BFF0F7 /* gRPCCertificates.bundle */; };
 		32438BA92062B45F00BFF0F7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32438BA82062B45F00BFF0F7 /* LoginViewController.swift */; };
 		32438BAC2062B50F00BFF0F7 /* TC_Serv_Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32438BAB2062B50F00BFF0F7 /* TC_Serv_Auth.swift */; };
@@ -82,6 +84,8 @@
 		3237D1C020839E3400B4C315 /* PodcastListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PodcastListViewController.xib; sourceTree = "<group>"; };
 		3237D1D2208557FD00B4C315 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		3237D1D52085581B00B4C315 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		3237D1D7208558E500B4C315 /* TC_Serv_Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TC_Serv_Cache.swift; sourceTree = "<group>"; };
+		3237D1D920855BA600B4C315 /* TC_Serv_Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TC_Serv_Storage.swift; sourceTree = "<group>"; };
 		32438B6F2062B18E00BFF0F7 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
 		32438B702062B18E00BFF0F7 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
 		32438B712062B18E00BFF0F7 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleToolboxForMac.framework; sourceTree = "<group>"; };
@@ -210,13 +214,13 @@
 			path = GoogleSignin;
 			sourceTree = "<group>";
 		};
-		3237D1BE20839E0D00B4C315 /* podcasList */ = {
+		3237D1BE20839E0D00B4C315 /* PodcastList */ = {
 			isa = PBXGroup;
 			children = (
 				3237D1BF20839E3400B4C315 /* PodcastListViewController.swift */,
 				3237D1C020839E3400B4C315 /* PodcastListViewController.xib */,
 			);
-			path = podcasList;
+			path = PodcastList;
 			sourceTree = "<group>";
 		};
 		3237D1D1208557DE00B4C315 /* CoreData */ = {
@@ -318,6 +322,8 @@
 				32438BAB2062B50F00BFF0F7 /* TC_Serv_Auth.swift */,
 				3245736720647A3100A5D146 /* TC_Serv_Channel.swift */,
 				3245736920647A4700A5D146 /* TC_Serv_Chapter.swift */,
+				3237D1D7208558E500B4C315 /* TC_Serv_Cache.swift */,
+				3237D1D920855BA600B4C315 /* TC_Serv_Storage.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -356,7 +362,7 @@
 		3245736B2065032F00A5D146 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3237D1BE20839E0D00B4C315 /* podcasList */,
+				3237D1BE20839E0D00B4C315 /* PodcastList */,
 				5FAC5818207F334A006C407C /* MyRooms */,
 				32D9B4A5207E0CA5003F93AC /* News */,
 				32118E512066AEB900983E60 /* userView */,
@@ -562,10 +568,12 @@
 				32457349206413AC00A5D146 /* TC_DB_Collection.swift in Sources */,
 				3245736820647A3100A5D146 /* TC_Serv_Channel.swift in Sources */,
 				3245736620647A0500A5D146 /* Channel.swift in Sources */,
+				3237D1DA20855BA600B4C315 /* TC_Serv_Storage.swift in Sources */,
 				32438BAC2062B50F00BFF0F7 /* TC_Serv_Auth.swift in Sources */,
 				32438BA92062B45F00BFF0F7 /* LoginViewController.swift in Sources */,
 				32C1480E20713B7C00D49DAC /* mainViewCollectionViewCell.swift in Sources */,
 				32457364206479DC00A5D146 /* Chapter.swift in Sources */,
+				3237D1D8208558E500B4C315 /* TC_Serv_Cache.swift in Sources */,
 				324573472064139E00A5D146 /* TC_Serv_User.swift in Sources */,
 				32438BDF2064025000BFF0F7 /* UserTurnCast.swift in Sources */,
 				3237D1C120839E3400B4C315 /* PodcastListViewController.swift in Sources */,
@@ -745,6 +753,8 @@
 					"$(PROJECT_DIR)/Turncast/Libraries/Twitter-Kit",
 					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Messaging",
 					"$(PROJECT_DIR)/Turncast/Libraries/GoogleSignin",
+					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Storage",
+					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Firabase-Storage",
 				);
 				INFOPLIST_FILE = Turncast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -776,6 +786,8 @@
 					"$(PROJECT_DIR)/Turncast/Libraries/Twitter-Kit",
 					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Messaging",
 					"$(PROJECT_DIR)/Turncast/Libraries/GoogleSignin",
+					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Storage",
+					"$(PROJECT_DIR)/Turncast/Libraries/Firebase/Firabase-Storage",
 				);
 				INFOPLIST_FILE = Turncast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
